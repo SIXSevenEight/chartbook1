@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chart Book Asset Management — CB-DARP v4.2 Portfolio Tracker</title>
+  <title>Chart Book Asset Management — CB-DARP v5.0 Dual-Track Portfolio Tracker</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -30,8 +30,8 @@
   <script id="portfolio-ledger-data" type="application/json">
 {
   "architecture": "PLAN_B_TWO_TRACK_INDEPENDENT_FUNDS",
-  "strategy_id": "plan_b_twotrack_v42",
-  "strategy_name": "Plan B Two-Track Independent Funds Architecture (CB-DARP v4.2)",
+  "strategy_id": "plan_b_twotrack_v5",
+  "strategy_name": "Plan B Two-Track Independent Funds Architecture (CB-DARP v5.0)",
   "rebalance_policy": "방안 A (이탈 시에만 헌법 Stage 0 적격 1순위 교체 — Hold-Until-Exit)",
   "stop_loss_policy": "ATR(14) 2.0배수 유계 동적 손절 (-7.0% ~ -12.0%)",
   "constitution_summary": "시총 Track1 <= $100B (7슬롯) & Track2 > $100B (5슬롯) | 자본잠식 ZERO | 유증희석 ZERO | FCF 흑자 | GPM >= 45%",
@@ -938,7 +938,7 @@
   "c_suite_comments": {
     "cio": {
       "title": "[CIO 데일리 코멘트 • 운용사업부]",
-      "version_badge": "Two-Track v4.2 LIVE",
+      "version_badge": "Two-Track v5.0 LIVE",
       "bullets": [
         "Two-Track 이원화 독립 펀드 병행 운용 — Track 1 알파 펀드(CRDO, ALAB, VICR, ZETA, AXON, KVYO, RMBS) 7개 고속성장 슬롯과 Track 2 독점 펀드(NVDA, TSM, AVGO, MU, ASML) 5개 대형 독점 슬롯을 가동합니다.",
         "Pillar A/B/C/D 분산 구조로 단일 섹터 편중을 원천 차단하며, 29대 Tier 1 시장 주도주 중 50일선 안착 종목군을 상시 추적하여 이탈 발생 시 즉각 교체 편입합니다."
@@ -1470,7 +1470,7 @@
             <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3 space-y-1">
               <div class="flex items-center justify-between">
                 <span id="cio-comment-title" class="text-xs font-bold text-emerald-500">[CIO 데일리 코멘트 • 운용사업부]</span>
-                <span id="cio-comment-badge" class="text-xs font-mono text-[var(--muted-foreground)]">Two-Track v4.2 LIVE</span>
+                <span id="cio-comment-badge" class="text-xs font-mono text-[var(--muted-foreground)]">Two-Track v5.0 LIVE</span>
               </div>
               <ul id="cio-comment-list" class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
                 <li>Track 1(CRDO, ALAB, VICR, ZETA, AXON, KVYO, RMBS)은 헌법 1조~5조를 준수하여 평균 매출성장률 +60.7%, GPM 68.3%, 부채비율 0.13의 폭발적 10-Bagger 알파를 창출합니다.</li>
@@ -2098,8 +2098,7 @@
         '',
         '[CTO IT인프라본부 코멘트]',
         ...(ledgerData.c_suite_comments && ledgerData.c_suite_comments.cto ? ledgerData.c_suite_comments.cto.bullets.map(b => `- ${b}`) : ['- 3개년(+311.6%, Sharpe 2.27) 및 5개년(+482.8%) 백테스트 무결성을 검증하였으며, 웹 대시보드와 로컬 원장이 실시간 동기화됩니다.'])
-      ].join('
-');
+      ].join('\n');
 
       navigator.clipboard.writeText(lines).then(() => {
         const btn = document.getElementById('copy-tg-btn');
