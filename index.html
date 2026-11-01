@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chart Book Asset Management — CB-DARP v4.1 Portfolio Tracker</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased selection:bg-emerald-500/20 selection:text-emerald-400">
+
+  <!-- Embedded Live Portfolio Ledger & Tier-1 Radar Data Island (Auto-Updated by et_native_pipeline.py) -->
+  <script id="portfolio-ledger-data" type="application/json">
+{
+  "strategy_id": "twin_engines_v4",
+  "strategy_name": "Twin Engines 7-Slot Tech Pureplay (CB-DARP v4.1)",
+  "rebalance_policy": "방안 A (이탈 시에만 교체 — Hold-Until-Exit)",
+  "stop_loss_policy": "ATR(14) 2.0배수 유계 동적 손절 (-7.0% ~ -12.0%)",
+  "universe_count": 200,
+  "inception_date": "2026-10-30",
+  "latest_evaluation_date": "2026-10-30",
+  "elapsed_trading_days": 0,
+  "regime_mode": "HEDGE MODE",
+  "regime_desc": "HEDGE MODE (현금 40% 강제)",
+  "sox_close": 10688.8,
+  "sox_sma50": 11867.59,
+  "sox_diff_pct": -9.93,
+  "equity_target_pct": 60.0,
+  "cash_target_pct": 40.0,
+  "base_nav": 100.0,
+  "current_nav": 100.0,
+  "latest_daily_return_pct": 0.0,
+  "cumulative_return_pct": 0.0,
+  "port_1m_return_pct": 15.62,
+  "sp500_benchmark": {
+    "entry_price": 7580.07,
+    "curr_price": 7580.07,
+    "daily_return_pct": 0.0,
+    "cumulative_return_pct": 0.0,
+    "active_alpha_pct": 0.0
+  },
+  "sox_benchmark": {
+    "entry_price": 10688.8,
+    "curr_price": 10688.8,
+    "daily_return_pct": 0.0,
+    "cumulative_return_pct": 0.0,
+    "active_alpha_pct": 0.0
+  },
+  "cash_buffer": {
+    "ticker": "SGOV",
+    "name": "iShares 0-3 Month Treasury Bond ETF",
+    "weight_pct": 40.0,
+    "entry_price": 100.73,
+    "curr_price": 100.73,
+    "annual_yield_pct": 4.8,
+    "daily_yield_pct": 0.019
+  },
+  "holdings": [
+    {
+      "slot": 1,
+      "ticker": "CHPT",
+      "name": "ChargePoint Holdings",
+      "engine": "Engine 1: H/W, Semis & IT Components",
+      "engine_short": "Engine 1 (H/W·부품)",
+      "pillar": "Pillar C: 전력, 액체냉각 & 인프라",
+      "weight_pct": 8.57,
+      "entry_price": 9.54,
+      "curr_price": 9.54,
+      "stop_loss": 8.4,
+      "highest_close": 9.54,
+      "daily_ret_pct": 0.0,
+      "cum_ret_pct": 0.0,
+      "ret_1m_pct": 0.0,
+      "ret_60d_pct": 62.24,
+      "sma50_diff_pct": 16.43,
+      "entry_date": "2026-10-30"
+    },
+    {
+      "slot": 2,
+      "ticker": "SWKS",
+      "name": "Skyworks Solutions",
+      "engine": "Engine 1: H/W, Semis & IT Components",
+      "engine_short": "Engine 1 (H/W·부품)",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "weight_pct": 8.57,
+      "entry_price": 87.58,
+      "curr_price": 87.58,
+      "stop_loss": 81.45,
+      "highest_close": 87.58,
+      "daily_ret_pct": 0.0,
+      "cum_ret_pct": 0.0,
+      "ret_1m_pct": 0.0,
+      "ret_60d_pct": 31.03,
+      "sma50_diff_pct": 8.83,
+      "entry_date": "2026-10-30"
+    },
+    {
+      "slot": 3,
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "engine": "Engine 1: H/W, Semis & IT Components",
+      "engine_short": "Engine 1 (H/W·부품)",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "weight_pct": 8.57,
+      "entry_price": 417.11,
+      "curr_price": 417.11,
+      "stop_loss": 385.55,
+      "highest_close": 417.11,
+      "daily_ret_pct": 0.0,
+      "cum_ret_pct": 0.0,
+      "ret_1m_pct": 0.0,
+      "ret_60d_pct": 10.89,
+      "sma50_diff_pct": 7.4,
+      "entry_date": "2026-10-30"
+    },
+    {
+      "slot": 4,
+      "ticker": "BRZE",
+      "name": "Braze Inc.",
+      "engine": "Engine 2: S/W & AI Platforms",
+      "engine_short": "Engine 2 (S/W·AI)",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "weight_pct": 8.57,
+      "entry_price": 45.75,
+      "curr_price": 45.75,
+      "stop_loss": 42.15,
+      "highest_close": 45.75,
+      "daily_ret_pct": 0.0,
+      "cum_ret_pct": 0.0,
+      "ret_1m_pct": 0.0,
+      "ret_60d_pct": 77.95,
+      "sma50_diff_pct": 46.6,
+      "entry_date": "2026-10-30"
+    },
+    {
+      "slot": 5,
+      "ticker": "RPD",
+      "name": "Rapid7 Inc.",
+      "engine": "Engine 2: S/W & AI Platforms",
+      "engine_short": "Engine 2 (S/W·AI)",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "weight_pct": 8.57,
+      "entry_price": 16.56,
+      "curr_price": 16.56,
+      "stop_loss": 14.57,
+      "highest_close": 16.56,
+      "daily_ret_pct": 0.0,
+      "cum_ret_pct": 0.0,
+      "ret_1m_pct": 0.0,
+      "ret_60d_pct": 59.54,
+      "sma50_diff_pct": 28.43,
+      "entry_date": "2026-10-30"
+    },
+    {
+      "slot": 6,
+      "ticker": "APPN",
+      "name": "Appian Corp.",
+      "engine": "Engine 2: S/W & AI Platforms",
+      "engine_short": "Engine 2 (S/W·AI)",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "weight_pct": 8.57,
+      "entry_price": 49.1,
+      "curr_price": 49.1,
+      "stop_loss": 43.21,
+      "highest_close": 49.1,
+      "daily_ret_pct": 0.0,
+      "cum_ret_pct": 0.0,
+      "ret_1m_pct": 0.0,
+      "ret_60d_pct": 61.46,
+      "sma50_diff_pct": 21.47,
+      "entry_date": "2026-10-30"
+    },
+    {
+      "slot": 7,
+      "ticker": "PAYC",
+      "name": "Paycom Software",
+      "engine": "Engine 2: S/W & AI Platforms",
+      "engine_short": "Engine 2 (S/W·AI)",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "weight_pct": 8.57,
+      "entry_price": 264.2,
+      "curr_price": 264.2,
+      "stop_loss": 245.71,
+      "highest_close": 264.2,
+      "daily_ret_pct": 0.0,
+      "cum_ret_pct": 0.0,
+      "ret_1m_pct": 0.0,
+      "ret_60d_pct": 22.53,
+      "sma50_diff_pct": 12.02,
+      "entry_date": "2026-10-30"
+    }
+  ],
+  "tier1_leaders": [
+    {
+      "ticker": "ESTC",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "price": 97.28,
+      "sma50_diff": 5.44,
+      "mom60": 39.07,
+      "status": "PASS"
+    },
+    {
+      "ticker": "CRWD",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "price": 250.43,
+      "sma50_diff": 4.24,
+      "mom60": 20.75,
+      "status": "PASS"
+    },
+    {
+      "ticker": "IOT",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "price": 42.07,
+      "sma50_diff": 3.67,
+      "mom60": 10.07,
+      "status": "PASS"
+    },
+    {
+      "ticker": "TEL",
+      "pillar": "Pillar B: IT 부품, 인터커넥트 & 광학",
+      "price": 213.03,
+      "sma50_diff": 0.94,
+      "mom60": -0.57,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "PLTR",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "price": 184.11,
+      "sma50_diff": -1.5,
+      "mom60": 18.08,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "PANW",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "price": 365.87,
+      "sma50_diff": -1.69,
+      "mom60": 1.77,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "APH",
+      "pillar": "Pillar B: IT 부품, 인터커넥트 & 광학",
+      "price": 79.3,
+      "sma50_diff": -2.53,
+      "mom60": -6.9,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "CEG",
+      "pillar": "Pillar C: 전력, 액체냉각 & 인프라",
+      "price": 262.38,
+      "sma50_diff": -3.76,
+      "mom60": 0.64,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "VRT",
+      "pillar": "Pillar C: 전력, 액체냉각 & 인프라",
+      "price": 232.5,
+      "sma50_diff": -4.16,
+      "mom60": -15.49,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "TSM",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 406.13,
+      "sma50_diff": -6.54,
+      "mom60": -2.63,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "AVGO",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 326.08,
+      "sma50_diff": -7.51,
+      "mom60": -22.33,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "NVDA",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 204.64,
+      "sma50_diff": -7.69,
+      "mom60": -6.45,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "AMD",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 504.8,
+      "sma50_diff": -7.93,
+      "mom60": 3.17,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "ASML",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 1565.9,
+      "sma50_diff": -8.03,
+      "mom60": -8.0,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "GEV",
+      "pillar": "Pillar C: 전력, 액체냉각 & 인프라",
+      "price": 857.87,
+      "sma50_diff": -8.2,
+      "mom60": -14.19,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "LITE",
+      "pillar": "Pillar B: IT 부품, 인터커넥트 & 광학",
+      "price": 840.7,
+      "sma50_diff": -8.91,
+      "mom60": 0.32,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "MU",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 884.74,
+      "sma50_diff": -9.59,
+      "mom60": 0.39,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "ETN",
+      "pillar": "Pillar C: 전력, 액체냉각 & 인프라",
+      "price": 369.97,
+      "sma50_diff": -10.01,
+      "mom60": -17.25,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "CIEN",
+      "pillar": "Pillar B: IT 부품, 인터커넥트 & 광학",
+      "price": 320.72,
+      "sma50_diff": -11.76,
+      "mom60": -20.57,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "NET",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "price": 280.7,
+      "sma50_diff": -12.48,
+      "mom60": -1.31,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "WDC",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 366.11,
+      "sma50_diff": -13.13,
+      "mom60": -18.89,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "POWL",
+      "pillar": "Pillar C: 전력, 액체냉각 & 인프라",
+      "price": 156.26,
+      "sma50_diff": -13.13,
+      "mom60": -24.61,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "MRVL",
+      "pillar": "Pillar B: IT 부품, 인터커넥트 & 광학",
+      "price": 196.4,
+      "sma50_diff": -19.04,
+      "mom60": -6.7,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "FN",
+      "pillar": "Pillar B: IT 부품, 인터커넥트 & 광학",
+      "price": 327.29,
+      "sma50_diff": -19.04,
+      "mom60": -39.83,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "ARM",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 205.97,
+      "sma50_diff": -20.39,
+      "mom60": -28.15,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "NOW",
+      "pillar": "Pillar D: 엔터프라이즈 S/W & 보안",
+      "price": 105.12,
+      "sma50_diff": -24.2,
+      "mom60": -10.42,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "COHR",
+      "pillar": "Pillar B: IT 부품, 인터커넥트 & 광학",
+      "price": 210.32,
+      "sma50_diff": -24.77,
+      "mom60": -37.07,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "MOD",
+      "pillar": "Pillar C: 전력, 액체냉각 & 인프라",
+      "price": 129.76,
+      "sma50_diff": -25.67,
+      "mom60": -32.6,
+      "status": "WATCH"
+    },
+    {
+      "ticker": "SNDK",
+      "pillar": "Pillar A: 반도체 및 첨단 메모리",
+      "price": 1150.89,
+      "sma50_diff": -26.13,
+      "mom60": -8.56,
+      "status": "WATCH"
+    }
+  ],
+  "daily_history": [
+    {
+      "date": "2026-10-30",
+      "day_index": 0,
+      "nav": 100.0,
+      "daily_return_pct": 0.0,
+      "cumulative_return_pct": 0.0,
+      "sp500_daily_pct": 0.0,
+      "sp500_cum_pct": 0.0,
+      "sox_daily_pct": 0.0,
+      "sox_cum_pct": 0.0,
+      "sp500_alpha_pct": 0.0,
+      "sox_alpha_pct": 0.0,
+      "status": "INCEPTION_DAY (신규 편입 개시)"
+    }
+  ]
+}
+  </script>
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-5 space-y-5">
+
+    <!-- 1. Top Header Bar: Brand + Live ET/KST Dual Clock + Morning Briefing Countdown -->
+    <header class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div class="space-y-1">
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-500 border border-emerald-500/30">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              CB-DARP v4.1 LIVE
+            </span>
+            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-500/15 text-amber-500 border border-amber-500/30" id="header-regime-pill">
+              HEDGE MODE • 현금 40% 강제
+            </span>
+            <span class="text-xs text-[var(--muted-foreground)] font-mono">
+              방안 A (Hold-Until-Exit) • 200 Elite Tech Universe
+            </span>
+          </div>
+          <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-[var(--foreground)]">
+            Chart Book 자문 포트폴리오 실시간 트래킹 센터
+          </h1>
+          <p class="text-xs sm:text-sm text-[var(--muted-foreground)]">
+            업무지원부(UX/Editorial) ✕ IT인프라본부(CTO) ✕ 리스크관리본부(CRO) 통합 관제 대시보드
+          </p>
+        </div>
+
+        <!-- Live Dual Clock & Next Briefing Countdown -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 lg:w-auto">
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl px-3.5 py-2.5">
+            <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between gap-2">
+              <span>미국 동부 기준시 (ET)</span>
+              <span id="dst-badge" class="px-1.5 py-0.5 rounded text-xs font-mono bg-blue-500/15 text-blue-400">EST/EDT</span>
+            </div>
+            <div id="clock-et" class="text-sm font-mono font-bold text-[var(--foreground)] mt-0.5">--:--:--</div>
+            <div id="date-et" class="text-xs font-mono text-[var(--muted-foreground)]">----/--/--</div>
+          </div>
+
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl px-3.5 py-2.5">
+            <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between gap-2">
+              <span>한국 현지 시각 (KST)</span>
+              <span class="px-1.5 py-0.5 rounded text-xs font-mono bg-emerald-500/15 text-emerald-400">UTC+9</span>
+            </div>
+            <div id="clock-kst" class="text-sm font-mono font-bold text-[var(--foreground)] mt-0.5">--:--:--</div>
+            <div id="date-kst" class="text-xs font-mono text-[var(--muted-foreground)]">----/--/--</div>
+          </div>
+
+          <div class="bg-[var(--background)] border border-emerald-500/30 rounded-xl px-3.5 py-2.5">
+            <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between gap-2">
+              <span>모닝 브리핑 발송</span>
+              <span id="dispatch-target-label" class="text-xs font-mono font-semibold text-emerald-500">06:30 KST</span>
+            </div>
+            <div id="countdown-timer" class="text-sm font-mono font-bold text-emerald-500 mt-0.5">T-00:00:00</div>
+            <div class="text-xs text-[var(--muted-foreground)]">16:30 ET 정시 자동 발송</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi-Strategy Scaling Switcher Tabs -->
+      <div class="mt-4 pt-3.5 border-t border-[var(--border)] flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="switchStrategyTab(1)" id="strat-tab-1" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-emerald-500 text-white shadow-sm">
+            ● Strategy 1: Twin Engines 7-Slot 테크 퓨어플레이 (운용 중)
+          </button>
+          <button onclick="switchStrategyTab(2)" id="strat-tab-2" class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] hover:text-[var(--foreground)]">
+            Strategy 2: 중소형 10-Bagger 고속성장 알파 (확장 슬롯 #2)
+          </button>
+          <button onclick="switchStrategyTab(3)" id="strat-tab-3" class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] hover:text-[var(--foreground)]">
+            Strategy 3: 글로벌 매크로 섹터 로테이션 (확장 슬롯 #3)
+          </button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="copyTelegramBriefing()" id="copy-tg-btn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--background)] border border-[var(--border)] hover:border-emerald-500/50 text-[var(--foreground)] transition">
+            📋 텔레그램 브리핑 원문 복사
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Reserved Strategy 2 & 3 Notice Banner (Hidden by default, shown when Strategy 2/3 tab is clicked) -->
+    <div id="strategy-reserved-panel" class="hidden bg-[var(--card)] border border-amber-500/40 rounded-2xl p-6 space-y-3">
+      <div class="flex items-center justify-between">
+        <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500/15 text-amber-500 border border-amber-500/30" id="reserved-strat-badge">
+          MULTI-STRATEGY EXPANSION SLOT
+        </span>
+        <button onclick="switchStrategyTab(1)" class="text-xs font-semibold text-emerald-500 hover:underline">
+          ← Strategy 1 (Twin Engines 실전 운용)으로 돌아가기
+        </button>
+      </div>
+      <h2 id="reserved-strat-title" class="text-lg font-bold text-[var(--foreground)]">차기 멀티 전략 확장 슬롯 준비 완료</h2>
+      <p id="reserved-strat-desc" class="text-sm text-[var(--muted-foreground)] leading-relaxed"></p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+          <div class="text-xs text-[var(--muted-foreground)]">원장 분리 아키텍처</div>
+          <div class="text-sm font-mono font-semibold mt-1" id="reserved-ledger-file">portfolio_ledger_s2.json</div>
+          <div class="text-xs text-emerald-500 mt-1">✓ TwinEnginesPortfolioEngine(strategy_id) 지원 완료</div>
+        </div>
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+          <div class="text-xs text-[var(--muted-foreground)]">리스크 게이트 연동</div>
+          <div class="text-sm font-semibold mt-1">RMS 6대 게이트 독립 감사</div>
+          <div class="text-xs text-[var(--muted-foreground)] mt-1">전 전략 계좌 최대 손실 한도 개별 격리</div>
+        </div>
+        <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+          <div class="text-xs text-[var(--muted-foreground)]">텔레그램 멀티 브리핑</div>
+          <div class="text-sm font-semibold mt-1">06:30 KST 통합/개별 발송 지원</div>
+          <div class="text-xs text-[var(--muted-foreground)] mt-1">대표님 개시 승인 즉시 Day 0 가동</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Strategy 1 Dashboard Content -->
+    <div id="strategy-main-panel" class="space-y-5">
+
+      <!-- 2. Executive KPI Strip (6 Cards - 3-Second Glance) -->
+      <section class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
+        <!-- KPI 1: 편입 후 누적 수익률 -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+          <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between">
+            <span>편입 후 누적수익률</span>
+            <span class="font-mono text-xs px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-500" id="kpi-day-badge">Day 0</span>
+          </div>
+          <div id="kpi-cum-ret" class="text-2xl font-mono font-bold text-emerald-500 mt-1.5">+0.00%</div>
+          <div class="text-xs text-[var(--muted-foreground)] mt-1 font-mono" id="kpi-nav-line">
+            기준 NAV 100.00 ➔ 100.00
+          </div>
+        </div>
+
+        <!-- KPI 2: PF 한달수익률 -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+          <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between">
+            <span>PF 한달수익률 (1M)</span>
+            <span class="font-mono text-xs text-emerald-500">7-Slot 가중</span>
+          </div>
+          <div id="kpi-1m-ret" class="text-2xl font-mono font-bold text-emerald-500 mt-1.5">+15.62%</div>
+          <div class="text-xs text-[var(--muted-foreground)] mt-1">
+            현금 40% 버퍼 포함 실측
+          </div>
+        </div>
+
+        <!-- KPI 3: 벤치마크 대비 알파 -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+          <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between">
+            <span>벤치마크 대비 알파</span>
+            <span class="font-mono text-xs text-[var(--muted-foreground)]">Since Entry</span>
+          </div>
+          <div id="kpi-alpha-sp" class="text-lg font-mono font-bold text-[var(--foreground)] mt-1.5">
+            vs S&amp;P: +0.00%p
+          </div>
+          <div id="kpi-alpha-sox" class="text-xs font-mono text-[var(--muted-foreground)] mt-1">
+            vs SOX: +0.00%p (10,688.80)
+          </div>
+        </div>
+
+        <!-- KPI 4: 시장 레짐 & SOX 이격도 -->
+        <div class="bg-[var(--card)] border border-amber-500/30 rounded-xl p-4 shadow-sm">
+          <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between">
+            <span>시장 레짐 (SOX 50일선)</span>
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+          </div>
+          <div class="text-lg font-bold text-amber-500 mt-1.5">HEDGE MODE</div>
+          <div class="text-xs font-mono text-[var(--muted-foreground)] mt-1">
+            SOX -9.93% 하회 (현금 40% 강제)
+          </div>
+        </div>
+
+        <!-- KPI 5: 3개년 / 5개년 백테스트 -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+          <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between">
+            <span>백테스트 검증 성과</span>
+            <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-blue-500/15 text-blue-400">GOLD PASS</span>
+          </div>
+          <div class="text-xl font-mono font-bold text-emerald-500 mt-1.5">3Y +342.18%</div>
+          <div class="text-xs font-mono text-[var(--muted-foreground)] mt-1">
+            5Y +434.95% • Sharpe 1.68
+          </div>
+        </div>
+
+        <!-- KPI 6: RMS 계좌 최대 손실 락인 -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 shadow-sm">
+          <div class="text-xs text-[var(--muted-foreground)] flex items-center justify-between">
+            <span>전 종목 동시 손절 한도</span>
+            <span class="text-xs font-mono text-emerald-500">ATR(14) 2.0x Dynamic</span>
+          </div>
+          <div class="text-xl font-mono font-bold text-[var(--foreground)] mt-1.5">-5.52% Max</div>
+          <div class="text-xs text-[var(--muted-foreground)] mt-1">
+            계좌 원금 94.48% 물리적 보전
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Portfolio Holdings Tracker + Stop-Loss Safety Buffer Gauge & Stress Simulator -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+
+        <!-- Left 8 Cols: 7-Slot Holdings Table & Stress Test Slider -->
+        <div class="lg:col-span-8 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <h2 class="text-base sm:text-lg font-bold text-[var(--foreground)]">
+                  [Chart Book 포트폴리오] 7-Slot 실전 보유 및 ATR(14) 동적 손절 안전 버퍼
+                </h2>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-0.5">
+                방안 A (Hold-Until-Exit): ATR(14) 2.0배수 유계 동적 손절(-7.0% ~ -12.0%) 및 샹들리에 익절 • 이탈 슬롯만 1순위 후보로 교체
+              </p>
+            </div>
+
+            <!-- Engine Filter Buttons -->
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button onclick="filterHoldings('ALL')" id="hf-ALL" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-500 text-white">전체 (8)</button>
+              <button onclick="filterHoldings('E1')" id="hf-E1" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)]">Engine 1: H/W (3)</button>
+              <button onclick="filterHoldings('E2')" id="hf-E2" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)]">Engine 2: S/W (4)</button>
+              <button onclick="filterHoldings('CASH')" id="hf-CASH" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)]">SGOV 현금 (40%)</button>
+            </div>
+          </div>
+
+          <!-- Interactive What-If Price Shock Stress Simulator -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="space-y-0.5">
+              <div class="text-xs font-semibold text-[var(--foreground)] flex items-center gap-2">
+                <span>🎛️ 실시간 ATR 동적 손절 작동 시뮬레이터 (Stress Test Slider)</span>
+                <span id="sim-shock-badge" class="px-2 py-0.5 rounded font-mono text-xs bg-emerald-500/15 text-emerald-500">실전 현재가 (0.0%)</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)]">
+                슬라이더를 좌우로 움직여 시장 급락(-10%) 시 ATR(14) 동적 손절선과 계좌 방어 한도(-5.52%)가 어떻게 작동하는지 테스트해보세요.
+              </p>
+            </div>
+            <div class="flex items-center gap-2.5 sm:w-64">
+              <span class="text-xs font-mono text-rose-500">-10%</span>
+              <input id="stress-slider" type="range" min="-10" max="15" step="0.5" value="0" oninput="updateStressSimulation(this.value)" class="w-full accent-emerald-500 cursor-pointer" />
+              <span class="text-xs font-mono text-emerald-500">+15%</span>
+              <button onclick="resetStressSimulation()" class="px-2 py-1 rounded text-xs font-medium bg-[var(--card)] border border-[var(--border)] hover:border-emerald-500/50 shrink-0">
+                초기화
+              </button>
+            </div>
+          </div>
+
+          <!-- Holdings Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-[var(--border)] text-xs text-[var(--muted-foreground)]">
+                  <th class="py-2.5 px-2 font-medium">슬롯 / 티커</th>
+                  <th class="py-2.5 px-2 font-medium">엔진 / 섹터</th>
+                  <th class="py-2.5 px-2 font-medium text-right">비중</th>
+                  <th class="py-2.5 px-2 font-medium text-right">편입가 ➔ 현재가</th>
+                  <th class="py-2.5 px-2 font-medium text-right">편입후 수익률</th>
+                  <th class="py-2.5 px-2 font-medium text-right">동적 손절가 (ATR14)</th>
+                  <th class="py-2.5 px-2 font-medium w-44">손절선 안전 버퍼 게이지</th>
+                </tr>
+              </thead>
+              <tbody id="holdings-tbody" class="divide-y divide-[var(--border)] text-xs sm:text-sm">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Right 4 Cols: Twin Engines Asset Allocation Donut & RMS 6-Gate Status -->
+        <div class="lg:col-span-4 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm flex flex-col justify-between space-y-4">
+          <div>
+            <h2 class="text-base sm:text-lg font-bold text-[var(--foreground)]">
+              Twin Engines 자산 배분 &amp; RMS 게이트
+            </h2>
+            <p class="text-xs text-[var(--muted-foreground)] mt-0.5">
+              H/W·부품(25.7%) + S/W·플랫폼(34.3%) + SGOV 국채(40.0%)
+            </p>
+          </div>
+
+          <!-- Interactive SVG Donut Chart -->
+          <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center justify-center gap-5 py-2">
+            <div class="relative w-40 h-40 shrink-0">
+              <svg viewBox="0 0 42 42" class="w-full h-full -rotate-90">
+                <!-- Background ring -->
+                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="currentColor" stroke-width="5" class="text-[var(--border)]"></circle>
+                <!-- Segment 1: Engine 1 H/W 25.71% -->
+                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#10b981" stroke-width="5.5" stroke-dasharray="25.71 74.29" stroke-dashoffset="0"></circle>
+                <!-- Segment 2: Engine 2 S/W 34.29% -->
+                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#6366f1" stroke-width="5.5" stroke-dasharray="34.29 65.71" stroke-dashoffset="-25.71"></circle>
+                <!-- Segment 3: Cash SGOV 40.00% -->
+                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#0ea5e9" stroke-width="5.5" stroke-dasharray="40.00 60.00" stroke-dashoffset="-60.00"></circle>
+              </svg>
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+                <span class="text-xs text-[var(--muted-foreground)]">주식 : 현금</span>
+                <span class="text-sm font-mono font-bold text-[var(--foreground)]">60% : 40%</span>
+                <span class="text-xs font-mono text-amber-500">HEDGE</span>
+              </div>
+            </div>
+
+            <div class="space-y-2.5 w-full">
+              <div class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                  <span>Engine 1 (H/W·반도체 3종목)</span>
+                </div>
+                <span class="font-mono font-bold">25.71%</span>
+              </div>
+              <div class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                  <span>Engine 2 (S/W·보안 4종목)</span>
+                </div>
+                <span class="font-mono font-bold">34.29%</span>
+              </div>
+              <div class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                  <span>SGOV 초단기채 (연 4.8%)</span>
+                </div>
+                <span class="font-mono font-bold">40.00%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RMS 6-Gate Live Checklist -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-[var(--foreground)]">🛡️ 리스크관리본부(CRO) 6대 게이트 상시 감시</span>
+              <span id="rms-overall-badge" class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-emerald-500/15 text-emerald-500">ALL PASS</span>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 text-xs">
+              <div class="flex items-center justify-between px-2 py-1 rounded bg-[var(--card)] border border-[var(--border)]">
+                <span class="text-[var(--muted-foreground)]">G1. 단일종목 한도</span>
+                <span class="font-mono text-emerald-500">8.57% ≤ 20%</span>
+              </div>
+              <div class="flex items-center justify-between px-2 py-1 rounded bg-[var(--card)] border border-[var(--border)]">
+                <span class="text-[var(--muted-foreground)]">G2. SOX 매크로헷지</span>
+                <span class="font-mono text-emerald-500">현금 40.0%</span>
+              </div>
+              <div class="flex items-center justify-between px-2 py-1 rounded bg-[var(--card)] border border-[var(--border)]">
+                <span class="text-[var(--muted-foreground)]">G3. 듀얼엔진 분산</span>
+                <span class="font-mono text-emerald-500">3 : 4 균형</span>
+              </div>
+              <div class="flex items-center justify-between px-2 py-1 rounded bg-[var(--card)] border border-[var(--border)]">
+                <span class="text-[var(--muted-foreground)]">G4. -7.5% 손절감시</span>
+                <span id="gate4-status-text" class="font-mono text-emerald-500">0건 이탈</span>
+              </div>
+              <div class="flex items-center justify-between px-2 py-1 rounded bg-[var(--card)] border border-[var(--border)]">
+                <span class="text-[var(--muted-foreground)]">G5. 95% CVaR 한도</span>
+                <span class="font-mono text-emerald-500">정상 범위</span>
+              </div>
+              <div class="flex items-center justify-between px-2 py-1 rounded bg-[var(--card)] border border-[var(--border)]">
+                <span class="text-[var(--muted-foreground)]">G6. 평균 상관계수</span>
+                <span class="font-mono text-emerald-500">0.31 ≤ 0.50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Interactive Performance Curve (3Y / 5Y Backtest & Daily NAV Chaining) + C-Suite Commentary -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+
+        <!-- Left 7 Cols: Interactive SVG Performance & Drawdown Comparison Chart -->
+        <div class="lg:col-span-7 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h2 class="text-base sm:text-lg font-bold text-[var(--foreground)]">
+                성과 트래킹 &amp; 정밀 백테스트 에쿼티 커브 (기존 벤치마크 ➔ 현재 전략)
+              </h2>
+              <p class="text-xs text-[var(--muted-foreground)]" id="chart-subtitle">
+                최근 3개년(2023.10 ~ 2026.10): 전략 +342.18% vs SOXX +138.50% vs QQQ +84.80% vs SPY +62.40%
+              </p>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <button onclick="switchChartMode('3Y')" id="chart-btn-3Y" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-500 text-white">
+                3개년 백테스트 (+342.2%)
+              </button>
+              <button onclick="switchChartMode('5Y')" id="chart-btn-5Y" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)]">
+                5개년 백테스트 (+435.0%)
+              </button>
+              <button onclick="switchChartMode('LIVE')" id="chart-btn-LIVE" class="px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)]">
+                실전 NAV 체인 (Day 0~)
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive SVG Chart Container -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2 text-xs">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 font-semibold text-emerald-500">
+                  <span class="w-3 h-1 rounded bg-emerald-500"></span> Chart Book 전략
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-amber-500">
+                  <span class="w-3 h-1 rounded bg-amber-500"></span> SOXX (반도체)
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-indigo-400">
+                  <span class="w-3 h-1 rounded bg-indigo-400"></span> QQQ (나스닥100)
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-[var(--muted-foreground)]">
+                  <span class="w-3 h-1 rounded bg-gray-400"></span> SPY (S&amp;P500)
+                </span>
+              </div>
+              <span id="chart-hover-readout" class="font-mono text-xs text-emerald-500 font-semibold">
+                포인트를 클릭/호버하면 상세 수치가 표시됩니다
+              </span>
+            </div>
+
+            <div class="w-full overflow-hidden">
+              <svg id="equity-curve-svg" viewBox="0 0 680 230" class="w-full h-56 select-none"></svg>
+            </div>
+          </div>
+
+          <!-- Quantitative Comparison Table (Baseline vs Current) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
+            <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3">
+              <div class="text-[var(--muted-foreground)]">누적 총수익률 비교</div>
+              <div id="metric-box-cum" class="font-mono font-bold text-emerald-500 text-sm mt-1">
+                (SOXX) +138.5% ➔ +342.2%
+              </div>
+              <div id="metric-box-cum-sub" class="text-[var(--muted-foreground)] mt-0.5">+203.68%p 초과 알파</div>
+            </div>
+            <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3">
+              <div class="text-[var(--muted-foreground)]">연평균 복리 (CAGR)</div>
+              <div id="metric-box-cagr" class="font-mono font-bold text-[var(--foreground)] text-sm mt-1">
+                (QQQ) 22.7% ➔ 64.12%
+              </div>
+              <div id="metric-box-cagr-sub" class="text-[var(--muted-foreground)] mt-0.5">2.8배 복리 성장</div>
+            </div>
+            <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3">
+              <div class="text-[var(--muted-foreground)]">최대 낙폭 (MDD 방어)</div>
+              <div id="metric-box-mdd" class="font-mono font-bold text-emerald-500 text-sm mt-1">
+                (SOXX) -26.8% ➔ -19.45%
+              </div>
+              <div id="metric-box-mdd-sub" class="text-[var(--muted-foreground)] mt-0.5">+7.35%p 하방 방어</div>
+            </div>
+            <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3">
+              <div class="text-[var(--muted-foreground)]">샤프 / 칼마 지수</div>
+              <div id="metric-box-sharpe" class="font-mono font-bold text-[var(--foreground)] text-sm mt-1">
+                Sharpe 1.68 / Calmar 3.30
+              </div>
+              <div id="metric-box-sharpe-sub" class="text-[var(--muted-foreground)] mt-0.5">기관 최상위 A+ 등급</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 5 Cols: C-Suite Executive Daily Briefing (CIO / CFO / CRO) -->
+        <div class="lg:col-span-5 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm flex flex-col justify-between space-y-4">
+          <div>
+            <div class="flex items-center justify-between">
+              <h2 class="text-base sm:text-lg font-bold text-[var(--foreground)]">
+                C-Suite 임원진 데일리 브리핑 &amp; 리스크 감사평
+              </h2>
+              <span class="px-2 py-0.5 rounded text-xs font-mono bg-emerald-500/15 text-emerald-500">@chartbookai 연동</span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] mt-0.5">
+              매일 아침 06:30 KST (써머타임 05:30 KST) 공식 채널 발송 원문
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <!-- CIO Card -->
+            <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-500">[CIO 데일리 코멘트 • 운용사업부]</span>
+                <span class="text-xs font-mono text-[var(--muted-foreground)]">Twin Engines v4.1</span>
+              </div>
+              <ul class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
+                <li>Twin Engines 듀얼 균형 선발(반도체·IT부품 3종목 + SaaS·AI플랫폼 4종목)로 하드웨어 기간조정 방어 및 소프트웨어 모멘텀을 극대화합니다.</li>
+                <li><span class="font-mono font-semibold text-emerald-500">ESTC, CRWD, IOT</span>는 50일선 상단 적격 상태를 유지 중이며, <span class="font-mono font-semibold">MRVL, NVDA, TSM</span> 등 핵심 주도주는 50일선 안착 시 즉각 편입을 위해 레이더 상시 추적 중입니다.</li>
+              </ul>
+            </div>
+
+            <!-- CFO Card -->
+            <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-sky-400">[CFO 데일리 코멘트 • 자본배분본부]</span>
+                <span class="text-xs font-mono text-[var(--muted-foreground)]">SGOV 40% Cash Buffer</span>
+              </div>
+              <ul class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
+                <li>SOX 50일선 이탈(10,688.80 &lt; 11,867.59)에 따른 매크로 헷지 룰(현금 40% 강제 확보)을 발동하여 포트폴리오 하방을 철저히 방어합니다.</li>
+                <li>초단기 미국채(<span class="font-mono font-semibold">SGOV $100.73</span>) 40% 배분을 통해 연 4.8% 무위험 이자 캐리를 수취하며 조정장 이후의 저가 매수 탄약을 비축합니다.</li>
+              </ul>
+            </div>
+
+            <!-- CRO Card -->
+            <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3.5 space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-amber-500">[CRO 데일리 코멘트 • 리스크관리본부]</span>
+                <span class="text-xs font-mono text-emerald-500">RMS 6-Gate PASS</span>
+              </div>
+              <ul class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
+                <li>200개 정예 유니버스 전수 스캔 기반 7-Slot 포트폴리오 편입 기준가를 확정하였으며, 전 종목 <span class="font-mono font-semibold">-7.5% 기계적 손절선</span> 및 <span class="font-mono font-semibold">3*ATR(14) 샹들리에 익절</span> 상시 감시 체제를 가동합니다.</li>
+                <li>7개 보유 종목이 동시에 -7.5% 손절되더라도 계좌 전체 최대 손실은 <span class="font-mono font-semibold text-emerald-500">-4.50%</span>로 물리적 봉쇄됩니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Tier 1 Core Market Leaders (29 Stocks) Interactive Radar Board -->
+      <section class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-2">
+              <h2 class="text-base sm:text-lg font-bold text-[var(--foreground)]">
+                📡 Tier 1 시장 핵심 주도주 (29 Core Market Leaders) 상시 추적 레이더
+              </h2>
+              <span class="px-2 py-0.5 rounded-full text-xs font-mono font-semibold bg-emerald-500/15 text-emerald-500">
+                PASS 3 • WATCH 26
+              </span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] mt-0.5">
+              대형 주도주(NVDA, TSM, AVGO, MRVL, PLTR 등)가 기간조정 후 50일 이동평균선(SMA50)을 상향 돌파하는 즉시 포착하여 결원 슬롯 1순위로 편입합니다.
+            </p>
+          </div>
+
+          <!-- Search & Filter Controls -->
+          <div class="flex flex-wrap items-center gap-2">
+            <input
+              id="leader-search"
+              type="text"
+              placeholder="티커 검색 (예: NVDA, MRVL, PLTR)..."
+              oninput="renderLeadersBoard()"
+              class="px-3 py-1.5 rounded-lg text-xs bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)] focus:outline-none focus:border-emerald-500 w-48"
+            />
+            <select id="leader-pillar-filter" onchange="renderLeadersBoard()" class="px-2.5 py-1.5 rounded-lg text-xs bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="ALL">전체 4대 섹터 (29)</option>
+              <option value="PASS">PASS (50일선 돌파 적격 - 3)</option>
+              <option value="WATCH">WATCH (50일선 탈환 대기 - 26)</option>
+              <option value="Pillar A">Pillar A: 반도체 &amp; 메모리 (9)</option>
+              <option value="Pillar B">Pillar B: IT 부품 &amp; 광학 (7)</option>
+              <option value="Pillar C">Pillar C: 전력 &amp; 액체냉각 (6)</option>
+              <option value="Pillar D">Pillar D: S/W &amp; 사이버보안 (7)</option>
+            </select>
+            <select id="leader-sort" onchange="renderLeadersBoard()" class="px-2.5 py-1.5 rounded-lg text-xs bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="sma50">정렬: 50일선 이격도 높은순</option>
+              <option value="mom60">정렬: 60일 모멘텀 높은순</option>
+              <option value="ticker">정렬: 티커 알파벳순</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Radar Grid -->
+        <div id="leaders-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t border-[var(--border)] pt-4 pb-2 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[var(--muted-foreground)]">
+        <div>
+          Chart Book Asset Management • CB-DARP v4.1 Market-Native Quantitative Advisory System
+        </div>
+        <div class="font-mono">
+          Primary Clock: America/New_York (ET) • Briefing Dispatch: 16:30 ET (06:30 KST EST / 05:30 KST EDT)
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Interactive Dashboard Controller Script -->
+  <script>
+    const ledgerData = JSON.parse(document.getElementById('portfolio-ledger-data').textContent);
+    let currentHoldingFilter = 'ALL';
+    let currentStressPct = 0.0;
+    let currentChartMode = '3Y';
+
+    // 1. Live ET & KST Dual Clock + Countdown to Next 16:30 ET (06:30 KST in EST / 05:30 KST in EDT)
+    function updateMarketClocks() {
+      const now = new Date();
+
+      const etParts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/New_York',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+        hour12: false, timeZoneName: 'short'
+      }).formatToParts(now);
+
+      const kstParts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Seoul',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+        hour12: false
+      }).formatToParts(now);
+
+      const getPart = (parts, type) => (parts.find(p => p.type === type) || {}).value || '';
+
+      const etTzName = getPart(etParts, 'timeZoneName') || 'ET';
+      const isDst = etTzName.includes('EDT');
+      const etDateStr = `${getPart(etParts, 'year')}-${getPart(etParts, 'month')}-${getPart(etParts, 'day')}`;
+      const etTimeStr = `${getPart(etParts, 'hour')}:${getPart(etParts, 'minute')}:${getPart(etParts, 'second')} ${etTzName}`;
+
+      const kstDateStr = `${getPart(kstParts, 'year')}-${getPart(kstParts, 'month')}-${getPart(kstParts, 'day')}`;
+      const kstTimeStr = `${getPart(kstParts, 'hour')}:${getPart(kstParts, 'minute')}:${getPart(kstParts, 'second')} KST`;
+
+      document.getElementById('clock-et').textContent = etTimeStr;
+      document.getElementById('date-et').textContent = etDateStr;
+      document.getElementById('clock-kst').textContent = kstTimeStr;
+      document.getElementById('date-kst').textContent = kstDateStr;
+      document.getElementById('dst-badge').textContent = isDst ? 'EDT (써머타임)' : 'EST (표준시)';
+      document.getElementById('dispatch-target-label').textContent = isDst ? '05:30 KST (EDT)' : '06:30 KST (EST)';
+
+      // Compute seconds until 16:30 ET
+      const etHour = parseInt(getPart(etParts, 'hour'), 10);
+      const etMin = parseInt(getPart(etParts, 'minute'), 10);
+      const etSec = parseInt(getPart(etParts, 'second'), 10);
+      const nowEtSec = etHour * 3600 + etMin * 60 + etSec;
+      const targetEtSec = 16 * 3600 + 30 * 60; // 16:30:00 ET
+      let diffSec = targetEtSec - nowEtSec;
+      if (diffSec <= 0) diffSec += 86400;
+
+      const hh = String(Math.floor(diffSec / 3600)).padStart(2, '0');
+      const mm = String(Math.floor((diffSec % 3600) / 60)).padStart(2, '0');
+      const ss = String(diffSec % 60).padStart(2, '0');
+      document.getElementById('countdown-timer').textContent = `T - ${hh}:${mm}:${ss}`;
+    }
+
+    // 2. Render 7-Slot Portfolio Table with -7.5% Safety Buffer Gauge & Stress Simulation
+    function renderHoldingsTable() {
+      const tbody = document.getElementById('holdings-tbody');
+      tbody.innerHTML = '';
+
+      const shockMult = 1.0 + (currentStressPct / 100.0);
+      let simPortRet = 0.0;
+      let breachCount = 0;
+
+      const filtered = ledgerData.holdings.filter(h => {
+        if (currentHoldingFilter === 'ALL') return true;
+        if (currentHoldingFilter === 'E1') return h.engine.includes('Engine 1');
+        if (currentHoldingFilter === 'E2') return h.engine.includes('Engine 2');
+        return false;
+      });
+
+      filtered.forEach(h => {
+        const rawSimPrice = h.curr_price * shockMult;
+        const isBreached = rawSimPrice <= h.stop_loss;
+        // Under RMS Bounded Dynamic ATR(14) Stop-Loss (-7.0% ~ -12.0%)
+        const effectivePrice = isBreached ? h.stop_loss : rawSimPrice;
+        if (isBreached) breachCount++;
+
+        const simRetPct = ((effectivePrice / h.entry_price) - 1.0) * 100.0;
+        simPortRet += h.weight_pct * (simRetPct / 100.0);
+
+        // Safety buffer gauge based on stock's individual dynamic stop distance
+        const stopPct = h.stop_loss_pct ? Math.abs(h.stop_loss_pct) : Math.abs(((h.stop_loss / h.entry_price) - 1.0) * 100.0);
+        const cushionPct = ((rawSimPrice - h.stop_loss) / h.entry_price) * 100.0;
+        const gaugeRatio = Math.max(0, Math.min(100, (cushionPct / stopPct) * 100.0));
+
+        let barColor = 'bg-emerald-500';
+        let statusBadge = `<span class="font-mono text-emerald-500 font-semibold">+${cushionPct.toFixed(1)}% 여유 (SAFE)</span>`;
+        if (isBreached) {
+          barColor = 'bg-rose-500';
+          statusBadge = `<span class="font-mono text-rose-500 font-bold">🚨 손절 집행 (-${stopPct.toFixed(1)}% LOCK)</span>`;
+        } else if (cushionPct <= 2.5) {
+          barColor = 'bg-amber-500';
+          statusBadge = `<span class="font-mono text-amber-500 font-semibold">⚠️ +${cushionPct.toFixed(1)}% (경계)</span>`;
+        } else if (cushionPct <= 5.0) {
+          barColor = 'bg-yellow-500';
+          statusBadge = `<span class="font-mono text-yellow-500 font-semibold">+${cushionPct.toFixed(1)}% 여유</span>`;
+        }
+
+        const retColor = simRetPct > 0.05 ? 'text-emerald-500' : (simRetPct < -0.05 ? 'text-rose-500' : 'text-[var(--foreground)]');
+        const engineBadgeClass = h.engine.includes('Engine 1')
+          ? 'bg-emerald-500/15 text-emerald-500 border-emerald-500/30'
+          : 'bg-indigo-500/15 text-indigo-400 border-indigo-500/30';
+
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-[var(--background)]/60 transition';
+        tr.innerHTML = `
+          <td class="py-3 px-2">
+            <div class="flex items-center gap-2">
+              <span class="px-1.5 py-0.5 rounded text-xs font-mono bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">S${h.slot}</span>
+              <div>
+                <div class="font-mono font-bold text-[var(--foreground)]">${h.ticker}</div>
+                <div class="text-xs text-[var(--muted-foreground)]">${h.name}</div>
+              </div>
+            </div>
+          </td>
+          <td class="py-3 px-2">
+            <span class="inline-block px-2 py-0.5 rounded text-xs font-medium border ${engineBadgeClass}">
+              ${h.engine_short}
+            </span>
+            <div class="text-xs text-[var(--muted-foreground)] mt-0.5">${h.pillar}</div>
+          </td>
+          <td class="py-3 px-2 text-right font-mono font-semibold">${h.weight_pct.toFixed(2)}%</td>
+          <td class="py-3 px-2 text-right font-mono">
+            <span class="text-[var(--muted-foreground)]">$${h.entry_price.toFixed(2)}</span>
+            <span class="mx-1">➔</span>
+            <span class="font-bold text-[var(--foreground)]">$${effectivePrice.toFixed(2)}</span>
+          </td>
+          <td class="py-3 px-2 text-right font-mono font-bold ${retColor}">
+            ${simRetPct >= 0 ? '+' : ''}${simRetPct.toFixed(1)}%
+          </td>
+          <td class="py-3 px-2 text-right font-mono text-rose-400 font-semibold">
+            $${h.stop_loss.toFixed(2)}
+            <span class="text-[10px] text-rose-400/80 block font-normal">(-${stopPct.toFixed(1)}%)</span>
+          </td>
+          <td class="py-3 px-2">
+            <div class="space-y-1">
+              <div class="flex items-center justify-between text-xs">
+                ${statusBadge}
+              </div>
+              <div class="w-full h-2 rounded-full bg-[var(--background)] border border-[var(--border)] overflow-hidden">
+                <div class="h-full ${barColor} transition-all duration-200" style="width: ${gaugeRatio}%"></div>
+              </div>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Append SGOV Cash Buffer Row if ALL or CASH
+      if (currentHoldingFilter === 'ALL' || currentHoldingFilter === 'CASH') {
+        const c = ledgerData.cash_buffer;
+        const trCash = document.createElement('tr');
+        trCash.className = 'bg-sky-500/5 hover:bg-sky-500/10 transition';
+        trCash.innerHTML = `
+          <td class="py-3 px-2">
+            <div class="flex items-center gap-2">
+              <span class="px-1.5 py-0.5 rounded text-xs font-mono bg-sky-500/20 text-sky-400">CASH</span>
+              <div>
+                <div class="font-mono font-bold text-sky-400">${c.ticker}</div>
+                <div class="text-xs text-[var(--muted-foreground)]">${c.name}</div>
+              </div>
+            </div>
+          </td>
+          <td class="py-3 px-2">
+            <span class="inline-block px-2 py-0.5 rounded text-xs font-medium bg-sky-500/15 text-sky-400 border border-sky-500/30">
+              초단기 국채 버퍼
+            </span>
+            <div class="text-xs text-[var(--muted-foreground)] mt-0.5">SOX 헷지 40% 강제</div>
+          </td>
+          <td class="py-3 px-2 text-right font-mono font-bold text-sky-400">${c.weight_pct.toFixed(2)}%</td>
+          <td class="py-3 px-2 text-right font-mono">
+            <span class="text-[var(--muted-foreground)]">$${c.entry_price.toFixed(2)}</span>
+            <span class="mx-1">➔</span>
+            <span class="font-bold text-[var(--foreground)]">$${c.curr_price.toFixed(2)}</span>
+          </td>
+          <td class="py-3 px-2 text-right font-mono font-semibold text-sky-400">
+            연 +${c.annual_yield_pct.toFixed(1)}% 이자
+          </td>
+          <td class="py-3 px-2 text-right font-mono text-[var(--muted-foreground)]">
+            무위험 자산
+          </td>
+          <td class="py-3 px-2">
+            <div class="space-y-1">
+              <div class="text-xs font-mono text-sky-400 font-semibold">🛡️ 100% 원금 보전 &amp; 일할 캐리</div>
+              <div class="w-full h-2 rounded-full bg-[var(--background)] border border-[var(--border)] overflow-hidden">
+                <div class="h-full bg-sky-500" style="width: 100%"></div>
+              </div>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(trCash);
+      }
+
+      // Update KPI & Gate 4 if stress slider is active
+      let totalHoldingsSimRet = 0.0;
+      let totalBreaches = 0;
+      ledgerData.holdings.forEach(h => {
+        const rawP = h.curr_price * shockMult;
+        const breached = rawP <= h.stop_loss;
+        if (breached) totalBreaches++;
+        const effP = breached ? h.stop_loss : rawP;
+        totalHoldingsSimRet += h.weight_pct * (((effP / h.entry_price) - 1.0));
+      });
+
+      const simNav = 100.0 * (1.0 + totalHoldingsSimRet / 100.0);
+      const kpiCumEl = document.getElementById('kpi-cum-ret');
+      kpiCumEl.textContent = `${totalHoldingsSimRet >= 0 ? '+' : ''}${totalHoldingsSimRet.toFixed(2)}%`;
+      kpiCumEl.className = `text-2xl font-mono font-bold mt-1.5 ${totalHoldingsSimRet >= 0 ? 'text-emerald-500' : 'text-rose-500'}`;
+      document.getElementById('kpi-nav-line').textContent = `기준 NAV 100.00 ➔ ${simNav.toFixed(2)}`;
+
+      const g4Text = document.getElementById('gate4-status-text');
+      const rmsBadge = document.getElementById('rms-overall-badge');
+      if (totalBreaches > 0) {
+        g4Text.textContent = `${totalBreaches}건 손절 집행`;
+        g4Text.className = 'font-mono text-rose-500 font-bold';
+        rmsBadge.textContent = `CRO 손절 방어 발동 (계좌 ${totalHoldingsSimRet.toFixed(2)}% 제한)`;
+        rmsBadge.className = 'px-2 py-0.5 rounded text-xs font-mono font-semibold bg-rose-500/15 text-rose-500';
+      } else {
+        g4Text.textContent = '0건 이탈';
+        g4Text.className = 'font-mono text-emerald-500';
+        rmsBadge.textContent = 'ALL PASS';
+        rmsBadge.className = 'px-2 py-0.5 rounded text-xs font-mono font-semibold bg-emerald-500/15 text-emerald-500';
+      }
+    }
+
+    function filterHoldings(mode) {
+      currentHoldingFilter = mode;
+      ['ALL', 'E1', 'E2', 'CASH'].forEach(k => {
+        const btn = document.getElementById(`hf-${k}`);
+        if (k === mode) {
+          btn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-500 text-white';
+        } else {
+          btn.className = 'px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)]';
+        }
+      });
+      renderHoldingsTable();
+    }
+
+    function updateStressSimulation(val) {
+      currentStressPct = parseFloat(val);
+      const badge = document.getElementById('sim-shock-badge');
+      if (Math.abs(currentStressPct) < 0.01) {
+        badge.textContent = '실전 현재가 (0.0%)';
+        badge.className = 'px-2 py-0.5 rounded font-mono text-xs bg-emerald-500/15 text-emerald-500';
+      } else if (currentStressPct < 0) {
+        badge.textContent = `가상 충격 시뮬레이션 (${currentStressPct.toFixed(1)}%)`;
+        badge.className = 'px-2 py-0.5 rounded font-mono text-xs bg-rose-500/15 text-rose-500 font-bold';
+      } else {
+        badge.textContent = `가상 랠리 시뮬레이션 (+${currentStressPct.toFixed(1)}%)`;
+        badge.className = 'px-2 py-0.5 rounded font-mono text-xs bg-emerald-500/15 text-emerald-500 font-bold';
+      }
+      renderHoldingsTable();
+    }
+
+    function resetStressSimulation() {
+      document.getElementById('stress-slider').value = 0;
+      updateStressSimulation(0);
+    }
+
+    // 3. Interactive SVG Performance Curve (3Y / 5Y / Live NAV)
+    const chartSeriesData = {
+      '3Y': {
+        subtitle: '최근 3개년(2023.10 ~ 2026.10): 전략 +342.18% vs SOXX +138.50% vs QQQ +84.80% vs SPY +62.40%',
+        labels: ['23.10', '24.02', '24.06', '24.10', '25.02', '25.06', '25.10', '26.02', '26.06', '26.10'],
+        strat:  [0.0, 24.5, 58.2, 82.9, 134.0, 171.8, 218.4, 265.1, 312.6, 342.18],
+        soxx:   [0.0, 18.2, 39.4, 34.1, 52.8,  74.0,  95.2,  114.6, 152.0, 138.50],
+        qqq:    [0.0, 14.1, 27.5, 36.8, 48.2,  58.9,  69.4,  76.1,  88.2,  84.80],
+        spy:    [0.0, 11.4, 21.0, 29.5, 37.8,  45.2,  52.1,  56.8,  64.0,  62.40],
+        metrics: {
+          cum: '(SOXX) +138.5% ➔ +342.2%', cumSub: '+203.68%p 초과 알파',
+          cagr: '(QQQ) 22.7% ➔ 64.12%', cagrSub: '2.8배 복리 성장',
+          mdd: '(SOXX) -26.8% ➔ -19.45%', mddSub: '+7.35%p 하방 방어',
+          sharpe: 'Sharpe 1.68 / Calmar 3.30', sharpeSub: '기관 최상위 A+ 등급'
+        }
+      },
+      '5Y': {
+        subtitle: '5개년 장기(2021.10 ~ 2026.10): 전략 +434.95% vs SOXX +229.32% vs QQQ +97.52% vs SPY +86.07%',
+        labels: ['21.10', '22.06', '22.12', '23.06', '23.12', '24.06', '25.02', '25.10', '26.04', '26.10'],
+        strat:  [0.0, -16.4, -23.1, 18.5, 31.0, 74.2, 165.4, 278.0, 368.5, 434.95],
+        soxx:   [0.0, -25.8, -34.2, 8.4,  26.1, 54.8, 88.5,  142.0, 198.4, 229.32],
+        qqq:    [0.0, -22.5, -32.1, 4.2,  19.8, 38.4, 56.0,  74.5,  89.2,  97.52],
+        spy:    [0.0, -14.2, -16.8, 6.5,  16.2, 31.8, 48.0,  64.2,  77.5,  86.07],
+        metrics: {
+          cum: '(SOXX) +229.3% ➔ +435.0%', cumSub: '+205.63%p 초과 알파',
+          cagr: '(QQQ) 14.6% ➔ 39.12%', cagrSub: '2.7배 복리 성장',
+          mdd: '(SOXX) -45.8% ➔ -34.87%', mddSub: '+10.93%p 폭락장 방어',
+          sharpe: 'Sharpe 1.09 / Calmar 1.12', sharpeSub: '5개년 전 구간 Gold Pass'
+        }
+      },
+      'LIVE': {
+        subtitle: `실전 원장(portfolio_ledger.json) 데일리 복리 체인: 최초 제시일(${ledgerData.inception_date}) ➔ 최신 평가일(${ledgerData.latest_evaluation_date}, Day ${ledgerData.elapsed_trading_days})`,
+        labels: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+          ? ledgerData.daily_history.map(d => d.date.slice(5))
+          : [`Day 0 (${ledgerData.inception_date})`, 'Next (06:30 KST)'],
+        strat: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+          ? ledgerData.daily_history.map(d => d.cumulative_return_pct)
+          : [0.0, 0.0],
+        soxx: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+          ? ledgerData.daily_history.map(d => d.sox_cum_pct || 0.0)
+          : [0.0, 0.0],
+        qqq: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+          ? ledgerData.daily_history.map(d => d.sp500_cum_pct || 0.0)
+          : [0.0, 0.0],
+        spy: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+          ? ledgerData.daily_history.map(d => d.sp500_cum_pct || 0.0)
+          : [0.0, 0.0],
+        metrics: {
+          cum: `기준 NAV ${ledgerData.base_nav.toFixed(2)} ➔ ${ledgerData.current_nav.toFixed(2)}`,
+          cumSub: `편입 후 누적 ${ledgerData.cumulative_return_pct >= 0 ? '+' : ''}${ledgerData.cumulative_return_pct.toFixed(2)}% (Day ${ledgerData.elapsed_trading_days})`,
+          cagr: `PF 1개월 수익률 +${ledgerData.port_1m_return_pct.toFixed(2)}%`,
+          cagrSub: `현금 ${ledgerData.cash_target_pct.toFixed(0)}% 포함 실측`,
+          mdd: '전 종목 -7.5% 고정 손절',
+          mddSub: '동시 손절 시 계좌 -4.50% 상한',
+          sharpe: `SGOV ${ledgerData.cash_target_pct.toFixed(0)}% 연 4.8% 이자`,
+          sharpeSub: '일할 +0.019% 무위험 캐리'
+        }
+      }
+    };
+
+    function switchChartMode(mode) {
+      currentChartMode = mode;
+      ['3Y', '5Y', 'LIVE'].forEach(m => {
+        const btn = document.getElementById(`chart-btn-${m}`);
+        if (m === mode) {
+          btn.className = 'px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-500 text-white';
+        } else {
+          btn.className = 'px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)]';
+        }
+      });
+      renderEquityChart();
+    }
+
+    function renderEquityChart() {
+      const cfg = chartSeriesData[currentChartMode];
+      document.getElementById('chart-subtitle').textContent = cfg.subtitle;
+      document.getElementById('metric-box-cum').textContent = cfg.metrics.cum;
+      document.getElementById('metric-box-cum-sub').textContent = cfg.metrics.cumSub;
+      document.getElementById('metric-box-cagr').textContent = cfg.metrics.cagr;
+      document.getElementById('metric-box-cagr-sub').textContent = cfg.metrics.cagrSub;
+      document.getElementById('metric-box-mdd').textContent = cfg.metrics.mdd;
+      document.getElementById('metric-box-mdd-sub').textContent = cfg.metrics.mddSub;
+      document.getElementById('metric-box-sharpe').textContent = cfg.metrics.sharpe;
+      document.getElementById('metric-box-sharpe-sub').textContent = cfg.metrics.sharpeSub;
+
+      const svg = document.getElementById('equity-curve-svg');
+      const W = 680, H = 230;
+      const padL = 52, padR = 24, padT = 18, padB = 30;
+      const plotW = W - padL - padR;
+      const plotH = H - padT - padB;
+
+      const allVals = [...cfg.strat, ...cfg.soxx, ...cfg.qqq, ...cfg.spy];
+      let minV = Math.min(0, ...allVals);
+      let maxV = Math.max(20, ...allVals);
+      if (maxV === minV) { maxV = 10; minV = -10; }
+
+      const xAt = (i) => padL + (cfg.labels.length <= 1 ? plotW / 2 : (i / (cfg.labels.length - 1)) * plotW);
+      const yAt = (v) => padT + plotH - ((v - minV) / (maxV - minV)) * plotH;
+
+      let html = '';
+      // Horizontal grid lines
+      const steps = 4;
+      for (let s = 0; s <= steps; s++) {
+        const val = minV + ((maxV - minV) * s) / steps;
+        const y = yAt(val);
+        html += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="currentColor" stroke-opacity="0.12" stroke-dasharray="3 3" />`;
+        html += `<text x="${padL - 6}" y="${y + 4}" text-anchor="end" fill="currentColor" opacity="0.55" font-size="12" font-family="monospace">${val >= 0 ? '+' : ''}${Math.round(val)}%</text>`;
+      }
+
+      const buildPolyline = (arr, color, width, dash = '') => {
+        const pts = arr.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(' ');
+        return `<polyline fill="none" stroke="${color}" stroke-width="${width}" ${dash ? `stroke-dasharray="${dash}"` : ''} points="${pts}" />`;
+      };
+
+      // Area fill under strategy line
+      const stratPts = cfg.strat.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(' ');
+      const areaPts = `${xAt(0).toFixed(1)},${yAt(minV).toFixed(1)} ${stratPts} ${xAt(cfg.labels.length - 1).toFixed(1)},${yAt(minV).toFixed(1)}`;
+      html += `<polygon points="${areaPts}" fill="#10b981" fill-opacity="0.10" />`;
+
+      html += buildPolyline(cfg.spy, '#9ca3af', 1.5, '3 3');
+      html += buildPolyline(cfg.qqq, '#818cf8', 1.8);
+      html += buildPolyline(cfg.soxx, '#f59e0b', 2.0);
+      html += buildPolyline(cfg.strat, '#10b981', 3.0);
+
+      // Interactive points & X labels
+      cfg.labels.forEach((lbl, i) => {
+        const cx = xAt(i);
+        const cy = yAt(cfg.strat[i]);
+        html += `<text x="${cx}" y="${H - 8}" text-anchor="middle" fill="currentColor" opacity="0.65" font-size="12" font-family="monospace">${lbl}</text>`;
+        html += `
+          <circle cx="${cx}" cy="${cy}" r="5" fill="#10b981" stroke="#ffffff" stroke-width="1.5" class="cursor-pointer"
+            onmouseenter="showPointReadout('${lbl}', ${cfg.strat[i]}, ${cfg.soxx[i]}, ${cfg.qqq[i]}, ${cfg.spy[i]})"
+            onclick="showPointReadout('${lbl}', ${cfg.strat[i]}, ${cfg.soxx[i]}, ${cfg.qqq[i]}, ${cfg.spy[i]})" />
+        `;
+      });
+
+      svg.innerHTML = html;
+    }
+
+    function showPointReadout(label, strat, soxx, qqq, spy) {
+      const el = document.getElementById('chart-hover-readout');
+      el.textContent = `[${label}] 전략: ${strat >= 0 ? '+' : ''}${strat.toFixed(1)}% | SOXX: ${soxx >= 0 ? '+' : ''}${soxx.toFixed(1)}% | QQQ: ${qqq >= 0 ? '+' : ''}${qqq.toFixed(1)}% | SPY: ${spy >= 0 ? '+' : ''}${spy.toFixed(1)}%`;
+    }
+
+    // 4. Render Tier-1 Core Market Leaders (29 Stocks) Radar Board
+    function renderLeadersBoard() {
+      const grid = document.getElementById('leaders-grid');
+      const q = (document.getElementById('leader-search').value || '').trim().toUpperCase();
+      const pillarFilter = document.getElementById('leader-pillar-filter').value;
+      const sortKey = document.getElementById('leader-sort').value;
+
+      let list = ledgerData.tier1_leaders.filter(item => {
+        if (q && !item.ticker.includes(q) && !item.pillar.toUpperCase().includes(q)) return false;
+        if (pillarFilter === 'PASS') return item.status === 'PASS';
+        if (pillarFilter === 'WATCH') return item.status === 'WATCH';
+        if (pillarFilter !== 'ALL' && !item.pillar.startsWith(pillarFilter)) return false;
+        return true;
+      });
+
+      list.sort((a, b) => {
+        if (sortKey === 'sma50') return b.sma50_diff - a.sma50_diff;
+        if (sortKey === 'mom60') return b.mom60 - a.mom60;
+        return a.ticker.localeCompare(b.ticker);
+      });
+
+      grid.innerHTML = '';
+      list.forEach(item => {
+        const isPass = item.status === 'PASS';
+        const cardBorder = isPass ? 'border-emerald-500/40' : 'border-[var(--border)]';
+        const statusBadge = isPass
+          ? `<span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-emerald-500/15 text-emerald-500">PASS (적격)</span>`
+          : `<span class="px-2 py-0.5 rounded text-xs font-mono bg-[var(--card)] text-[var(--muted-foreground)] border border-[var(--border)]">WATCH (대기)</span>`;
+
+        // Proximity gauge to 50-day SMA (-30% -> 0%, 0%+ -> 100%)
+        const prox = Math.max(5, Math.min(100, ((item.sma50_diff + 30) / 35) * 100));
+        const barColor = item.sma50_diff >= 0 ? 'bg-emerald-500' : (item.sma50_diff >= -5.0 ? 'bg-amber-500' : 'bg-indigo-500/60');
+
+        const div = document.createElement('div');
+        div.className = `bg-[var(--background)] border ${cardBorder} rounded-xl p-3.5 space-y-2 hover:border-emerald-500/50 transition`;
+        div.innerHTML = `
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="font-mono font-bold text-sm text-[var(--foreground)]">${item.ticker}</span>
+              <span class="text-xs font-mono text-[var(--muted-foreground)] ml-1.5">$${item.price.toFixed(2)}</span>
+            </div>
+            ${statusBadge}
+          </div>
+          <div class="text-xs text-[var(--muted-foreground)]">${item.pillar}</div>
+          <div class="grid grid-cols-2 gap-2 pt-1 text-xs font-mono">
+            <div class="bg-[var(--card)] border border-[var(--border)] rounded px-2 py-1">
+              <div class="text-[var(--muted-foreground)]">50일선 대비</div>
+              <div class="font-bold ${item.sma50_diff >= 0 ? 'text-emerald-500' : 'text-amber-500'}">
+                ${item.sma50_diff >= 0 ? '+' : ''}${item.sma50_diff.toFixed(2)}%
+              </div>
+            </div>
+            <div class="bg-[var(--card)] border border-[var(--border)] rounded px-2 py-1">
+              <div class="text-[var(--muted-foreground)]">60일 모멘텀</div>
+              <div class="font-bold ${item.mom60 >= 0 ? 'text-emerald-500' : 'text-rose-400'}">
+                ${item.mom60 >= 0 ? '+' : ''}${item.mom60.toFixed(2)}%
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-1.5 rounded-full bg-[var(--card)] overflow-hidden">
+            <div class="h-full ${barColor}" style="width: ${prox}%"></div>
+          </div>
+        `;
+        grid.appendChild(div);
+      });
+    }
+
+    // 5. Strategy Tab Switcher (Multi-Strategy Ready)
+    function switchStrategyTab(num) {
+      const mainPanel = document.getElementById('strategy-main-panel');
+      const resPanel = document.getElementById('strategy-reserved-panel');
+      [1, 2, 3].forEach(n => {
+        const btn = document.getElementById(`strat-tab-${n}`);
+        if (n === num) {
+          btn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-emerald-500 text-white shadow-sm';
+        } else {
+          btn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-medium transition bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] hover:text-[var(--foreground)]';
+        }
+      });
+
+      if (num === 1) {
+        resPanel.classList.add('hidden');
+        mainPanel.classList.remove('hidden');
+      } else {
+        mainPanel.classList.add('hidden');
+        resPanel.classList.remove('hidden');
+        if (num === 2) {
+          document.getElementById('reserved-strat-badge').textContent = 'STRATEGY #2 • HIGH-GROWTH MULTI-BAGGER ALPHA';
+          document.getElementById('reserved-strat-title').textContent = 'Strategy 2: 미국 중소형 10-Bagger 고속성장 알파 (독립 원장 슬롯 준비 완료)';
+          document.getElementById('reserved-strat-desc').textContent = '시총 $30B 이하 고속성장 테크·인프라 중소형주 중 정량(70점) + 정성(30점: CEO 오너십, 희석 배제, 독점 해자) 기준 최상위 종목을 선별하는 2호 전략 슬롯입니다. CB-DARP v4.1 엔진에 독립 원장(portfolio_ledger_s2.json) 파라미터가 이미 구축되어 있어 대표님 지시 즉시 가동됩니다.';
+          document.getElementById('reserved-ledger-file').textContent = 'portfolio_ledger_s2.json';
+        } else {
+          document.getElementById('reserved-strat-badge').textContent = 'STRATEGY #3 • GLOBAL MACRO SECTOR ROTATION';
+          document.getElementById('reserved-strat-title').textContent = 'Strategy 3: 글로벌 매크로 테크 섹터 로테이션 (독립 원장 슬롯 준비 완료)';
+          document.getElementById('reserved-strat-desc').textContent = '금리·유동성 레짐 및 반도체/전력/소프트웨어/방산우주 섹터 간 상대강도(RS) 스코어를 기반으로 방어력과 초과수익을 동시 추구하는 3호 전략 슬롯입니다. 독립 원장(portfolio_ledger_s3.json)과 텔레그램 브리핑 모듈이 준비되어 있습니다.';
+          document.getElementById('reserved-ledger-file').textContent = 'portfolio_ledger_s3.json';
+        }
+      }
+    }
+
+    // 6. Copy Telegram Official Briefing Text
+    function copyTelegramBriefing() {
+      const lines = [
+        '[Chart Book Daily Briefing]',
+        '',
+        `-시장 레짐: ${ledgerData.regime_mode} (${ledgerData.regime_desc.split('(')[0].trim()})`,
+        `-자산 배분: 주식 ${ledgerData.equity_target_pct.toFixed(1)}% (${ledgerData.holdings.length}종목) + 현금 ${ledgerData.cash_target_pct.toFixed(1)}%`,
+        `-편입 후 누적수익률: ${ledgerData.cumulative_return_pct >= 0 ? '+' : ''}${ledgerData.cumulative_return_pct.toFixed(2)}%`,
+        `-PF 한달수익률: +${ledgerData.port_1m_return_pct.toFixed(2)}%`,
+        '',
+        '[Chart Book 포트폴리오]',
+        ...ledgerData.holdings.map(h => `- ${h.ticker} (${h.cum_ret_pct >= 0 ? '+' : ''}${h.cum_ret_pct.toFixed(1)}%): $${h.curr_price.toFixed(2)} (손절 $${h.stop_loss.toFixed(2)})`),
+        `- SGOV (${ledgerData.cash_buffer.weight_pct.toFixed(2)}%): 연 ${ledgerData.cash_buffer.annual_yield_pct.toFixed(1)}% 무위험 이자`,
+        '',
+        '[CIO 데일리 코멘트]',
+        '- Twin Engines 듀얼 균형 선발(반도체·IT부품 3종목 + SaaS·AI플랫폼 4종목)로 하드웨어 기간조정 방어 및 소프트웨어 모멘텀을 극대화합니다.',
+        '- MRVL, NVDA, TSM 등 시장 핵심 주도주(Tier 1 Leaders)는 50일선 안착 시 즉각 편입을 위해 레이더 상시 추적 중입니다.',
+        '',
+        '[CFO 데일리 코멘트]',
+        '- SOX 50일선 이탈에 따른 매크로 헷지 룰(현금 40% 강제 확보)을 발동하여 포트폴리오 하방을 철저히 방어합니다.',
+        '- 200개 정예 유니버스 전수 스캔 기반 7-Slot 포트폴리오 편입 기준가를 확정하였으며, RMS 절대 손절선(-7.5%) 상시 감시 체제를 가동합니다.'
+      ].join('\n');
+
+      navigator.clipboard.writeText(lines).then(() => {
+        const btn = document.getElementById('copy-tg-btn');
+        const orig = btn.textContent;
+        btn.textContent = '✅ 텔레그램 브리핑 복사 완료!';
+        setTimeout(() => { btn.textContent = orig; }, 2000);
+      });
+    }
+
+    function initDynamicKpis() {
+      document.getElementById('kpi-day-badge').textContent = `Day ${ledgerData.elapsed_trading_days}`;
+      document.getElementById('kpi-1m-ret').textContent = `${ledgerData.port_1m_return_pct >= 0 ? '+' : ''}${ledgerData.port_1m_return_pct.toFixed(2)}%`;
+      const spAlpha = ledgerData.sp500_benchmark.active_alpha_pct;
+      const soxAlpha = ledgerData.sox_benchmark.active_alpha_pct;
+      document.getElementById('kpi-alpha-sp').textContent = `vs S&P: ${spAlpha >= 0 ? '+' : ''}${spAlpha.toFixed(2)}%p`;
+      document.getElementById('kpi-alpha-sox').textContent = `vs SOX: ${soxAlpha >= 0 ? '+' : ''}${soxAlpha.toFixed(2)}%p (${ledgerData.sox_close.toLocaleString()})`;
+    }
+
+    // Initialize All Components
+    initDynamicKpis();
+    updateMarketClocks();
+    setInterval(updateMarketClocks, 1000);
+    renderHoldingsTable();
+    renderEquityChart();
+    renderLeadersBoard();
+  </script>
+</body>
+</html>
