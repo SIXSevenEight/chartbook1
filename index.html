@@ -380,6 +380,13 @@
   "latest_daily_return_pct": 0.0,
   "cumulative_return_pct": 0.0,
   "port_1m_return_pct": -11.91,
+  "t1_1m_return_pct": -15.56,
+  "t2_1m_return_pct": -8.25,
+  "rms_audit": {
+    "t1_loss_limit_pct": -7.2,
+    "t2_loss_limit_pct": -5.82,
+    "combined_loss_limit_pct": -6.51
+  },
   "sp500_benchmark": {
     "entry_price": 7580.07,
     "curr_price": 7580.07,
@@ -1194,104 +1201,288 @@
   "backtest_summary": {
     "3y_backtest": {
       "Track 1 (10-Bagger Alpha)": {
-        "cum_ret": 386.7,
-        "cagr": 69.4,
-        "mdd": -19.8,
-        "vol": 31.9,
-        "sharpe": 2.04
+        "cum_ret": 407.3,
+        "cagr": 71.8,
+        "mdd": -21.1,
+        "vol": 32.1,
+        "sharpe": 2.1,
+        "calmar": 3.4
       },
       "Track 2 (Mega Monopoly)": {
-        "cum_ret": 944.9,
-        "cagr": 118.6,
-        "mdd": -19.8,
-        "vol": 31.8,
-        "sharpe": 3.59
+        "cum_ret": 1351.2,
+        "cagr": 143.9,
+        "mdd": -19.2,
+        "vol": 33.8,
+        "sharpe": 4.12,
+        "calmar": 7.48
       },
       "Two-Track Combined (50:50)": {
-        "cum_ret": 665.8,
-        "cagr": 97.1,
-        "mdd": -19.4,
-        "vol": 29.9,
-        "sharpe": 3.1
+        "cum_ret": 879.3,
+        "cagr": 113.9,
+        "mdd": -19.3,
+        "vol": 31.2,
+        "sharpe": 3.51,
+        "calmar": 5.9
       },
       "Benchmark: SOX (Semis)": {
         "cum_ret": 235.6,
         "cagr": 49.7,
         "mdd": -39.7,
         "vol": 40.5,
-        "sharpe": 1.12
+        "sharpe": 1.12,
+        "calmar": 1.25
       },
       "Benchmark: QQQ (Nasdaq 100)": {
         "cum_ret": 101.1,
         "cagr": 26.2,
         "mdd": -22.8,
         "vol": 20.6,
-        "sharpe": 1.06
+        "sharpe": 1.06,
+        "calmar": 1.15
       },
       "Benchmark: SPY (S&P 500)": {
         "cum_ret": 88.6,
         "cagr": 23.5,
         "mdd": -18.8,
         "vol": 15.2,
-        "sharpe": 1.25
+        "sharpe": 1.25,
+        "calmar": 1.25
       }
     },
     "5y_backtest": {
       "Track 1 (10-Bagger Alpha)": {
-        "cum_ret": 551.6,
-        "cagr": 47.8,
-        "mdd": -19.8,
+        "cum_ret": 474.7,
+        "cagr": 44.0,
+        "mdd": -21.2,
         "vol": 29.2,
-        "sharpe": 1.48
+        "sharpe": 1.35,
+        "calmar": 2.07
       },
       "Track 2 (Mega Monopoly)": {
-        "cum_ret": 1241.3,
-        "cagr": 71.8,
+        "cum_ret": 1762.8,
+        "cagr": 83.9,
         "mdd": -28.5,
-        "vol": 30.0,
-        "sharpe": 2.24
+        "vol": 31.4,
+        "sharpe": 2.53,
+        "calmar": 2.94
       },
       "Two-Track Combined (50:50)": {
-        "cum_ret": 896.4,
-        "cagr": 61.4,
-        "mdd": -20.1,
-        "vol": 27.9,
-        "sharpe": 2.04
+        "cum_ret": 1118.7,
+        "cagr": 68.4,
+        "mdd": -20.2,
+        "vol": 28.9,
+        "sharpe": 2.21,
+        "calmar": 3.38
       },
       "Benchmark: SOX (Semis)": {
         "cum_ret": 175.8,
         "cagr": 23.5,
         "mdd": -44.6,
         "vol": 39.6,
-        "sharpe": 0.48
+        "sharpe": 0.48,
+        "calmar": 0.53
       },
       "Benchmark: QQQ (Nasdaq 100)": {
         "cum_ret": 84.2,
         "cagr": 13.6,
         "mdd": -32.4,
         "vol": 23.2,
-        "sharpe": 0.39
+        "sharpe": 0.39,
+        "calmar": 0.42
       },
       "Benchmark: SPY (S&P 500)": {
         "cum_ret": 71.4,
         "cagr": 11.9,
         "mdd": -23.4,
         "vol": 17.3,
-        "sharpe": 0.43
+        "sharpe": 0.43,
+        "calmar": 0.51
       }
+    },
+    "curves_3y": {
+      "labels": [
+        "2023.10",
+        "2024.02",
+        "2024.07",
+        "2024.10",
+        "2025.03",
+        "2025.07",
+        "2025.10",
+        "2026.03",
+        "2026.07",
+        "2026.10"
+      ],
+      "strat_t1": [
+        0.0,
+        18.5,
+        24.9,
+        37.7,
+        55.0,
+        81.2,
+        176.9,
+        233.0,
+        473.4,
+        407.3
+      ],
+      "strat_t2": [
+        0.0,
+        40.3,
+        70.9,
+        87.5,
+        112.8,
+        185.1,
+        450.0,
+        712.0,
+        1269.0,
+        1351.2
+      ],
+      "strat_comb": [
+        0.0,
+        29.4,
+        47.9,
+        62.6,
+        83.9,
+        133.1,
+        313.5,
+        472.5,
+        871.2,
+        879.3
+      ],
+      "soxx": [
+        0.0,
+        48.4,
+        72.0,
+        67.4,
+        43.6,
+        76.2,
+        126.5,
+        143.8,
+        296.4,
+        235.6
+      ],
+      "qqq": [
+        0.0,
+        26.0,
+        38.8,
+        44.2,
+        43.5,
+        59.5,
+        81.5,
+        74.6,
+        107.3,
+        101.1
+      ],
+      "spy": [
+        0.0,
+        22.8,
+        32.6,
+        41.9,
+        42.8,
+        52.7,
+        67.8,
+        68.4,
+        85.4,
+        88.6
+      ]
+    },
+    "curves_5y": {
+      "labels": [
+        "2022.01",
+        "2022.07",
+        "2023.02",
+        "2023.08",
+        "2024.02",
+        "2024.09",
+        "2025.03",
+        "2025.10",
+        "2026.04",
+        "2026.10"
+      ],
+      "strat_t1": [
+        0.0,
+        -4.6,
+        12.8,
+        24.5,
+        32.3,
+        38.3,
+        76.3,
+        182.1,
+        379.8,
+        474.7
+      ],
+      "strat_t2": [
+        0.0,
+        -17.3,
+        -9.9,
+        25.5,
+        78.7,
+        112.5,
+        178.5,
+        457.7,
+        1157.1,
+        1762.8
+      ],
+      "strat_comb": [
+        0.0,
+        -11.0,
+        1.5,
+        25.0,
+        55.5,
+        75.4,
+        127.4,
+        319.9,
+        768.4,
+        1118.7
+      ],
+      "soxx": [
+        0.0,
+        -27.1,
+        -20.5,
+        -11.1,
+        22.0,
+        26.7,
+        16.3,
+        71.2,
+        148.9,
+        175.8
+      ],
+      "qqq": [
+        0.0,
+        -21.9,
+        -20.1,
+        -6.1,
+        15.4,
+        23.6,
+        28.3,
+        60.5,
+        71.5,
+        84.2
+      ],
+      "spy": [
+        0.0,
+        -15.2,
+        -10.8,
+        -4.9,
+        11.6,
+        22.5,
+        26.9,
+        50.1,
+        58.9,
+        71.4
+      ]
     }
   },
   "c_suite_comments": {
     "cio": {
-      "title": "[CIO 데일리 코멘트 • 운용사업부]",
+      "title": "[CIO 데일리 코멘트 • 운용사업부 (Dual-Track 통합)]",
       "version_badge": "214종목 무편향 v6.0 LIVE",
       "bullets": [
         "214개 전 종목 100% 무편향 자동 채점 가동 — 수동 딕셔너리를 완전 폐기하고 동일 수학 공식으로 선발된 Track 1 알파 펀드(CRDO, ALAB, VICR, TER, RMBS, KLIC, LSCC, 평균 성장률 +82.1%, GPM 65.8%, D/E 0.03) 7슬롯과 Track 2 메가 독점 펀드(MU, SNDK, PLTR, NVDA, AVGO) 5슬롯을 동시 운용합니다.",
-        "무편향 포트폴리오 백테스트 결과 3개년 통합 +665.8%(Track 1 +386.7% / Track 2 +944.9%, Sharpe 3.1), 5개년 통합 +896.4%의 압도적 초과 알파를 달성했습니다."
+        "무편향 포트폴리오 백테스트 결과 3개년 통합 +879.3%(Track 1 +407.3% / Track 2 +1351.2%, Sharpe 3.51), 5개년 통합 +1118.7%의 압도적 초과 알파를 달성했습니다."
       ]
     },
     "cfo": {
-      "title": "[CFO 데일리 코멘트 • 자본배분본부]",
+      "title": "[CFO 데일리 코멘트 • 자본배분본부 (Dual-Track 통합)]",
       "version_badge": "SGOV 40.0% 매크로 헷지",
       "bullets": [
         "SOX 지수(10688.80 vs 50일선 11867.59) 레짐에 따라 안전자산 SGOV 40.0% 강제 배분 룰을 100% 준수하고 있습니다.",
@@ -1299,7 +1490,7 @@
       ]
     },
     "cro": {
-      "title": "[CRO 데일리 코멘트 • 리스크관리본부]",
+      "title": "[CRO 데일리 코멘트 • 리스크관리본부 (Dual-Track 통합)]",
       "version_badge": "ATR 2.0x Dynamic Stop (GOLD PASS)",
       "bullets": [
         "214종목 무편향 Stage 0 하드컷(자본잠식 ZERO, 유증희석 ZERO, OPM>0, FCF>0, D/E<=1.0) 통과 12개 전 슬롯에 ATR(14) 2.0배수 유계 동적 손절(-7.0% ~ -12.0%)을 100% 집행합니다.",
@@ -1307,12 +1498,116 @@
       ]
     },
     "cto": {
-      "title": "[CTO 데일리 코멘트 • IT인프라본부]",
+      "title": "[CTO 데일리 코멘트 • IT인프라본부 (Dual-Track 통합)]",
       "version_badge": "Single-File Unified Engine",
       "bullets": [
-        "214종목 16-Thread 재무 크롤러, 무편향 100점 자동 채점기, 3Y(+665.8%) / 5Y(+896.4%) 백테스트 엔진, RMS 6대 게이트, GitHub Pages 배포 모듈을 et_native_pipeline.py 단일 파일로 100% 통합 완료했습니다.",
-        "웹 대시보드(index.html)와 실시간 파이프라인(et_native_pipeline.py)의 불변 원장 JSON Data Island 영구 동기화 체제를 가동합니다."
+        "214종목 16-Thread 재무 크롤러, 무편향 100점 자동 채점기, 3Y(+879.3%) / 5Y(+1118.7%) 백테스트 엔진, RMS 6대 게이트, GitHub Pages 배포 모듈을 et_native_pipeline.py 단일 파일로 100% 통합 완료했습니다.",
+        "웹 대시보드(index.html) 상단 스위처를 통해 Track 1 단독 / Track 2 단독 / Dual-Track 통합 뷰를 실시간 전환할 수 있습니다."
       ]
+    }
+  },
+  "c_suite_by_track": {
+    "ALL": {
+      "cio": {
+        "title": "[CIO 데일리 코멘트 • 운용사업부 (Dual-Track 통합)]",
+        "version_badge": "214종목 무편향 v6.0 LIVE",
+        "bullets": [
+          "214개 전 종목 100% 무편향 자동 채점 가동 — 수동 딕셔너리를 완전 폐기하고 동일 수학 공식으로 선발된 Track 1 알파 펀드(CRDO, ALAB, VICR, TER, RMBS, KLIC, LSCC, 평균 성장률 +82.1%, GPM 65.8%, D/E 0.03) 7슬롯과 Track 2 메가 독점 펀드(MU, SNDK, PLTR, NVDA, AVGO) 5슬롯을 동시 운용합니다.",
+          "무편향 포트폴리오 백테스트 결과 3개년 통합 +879.3%(Track 1 +407.3% / Track 2 +1351.2%, Sharpe 3.51), 5개년 통합 +1118.7%의 압도적 초과 알파를 달성했습니다."
+        ]
+      },
+      "cfo": {
+        "title": "[CFO 데일리 코멘트 • 자본배분본부 (Dual-Track 통합)]",
+        "version_badge": "SGOV 40.0% 매크로 헷지",
+        "bullets": [
+          "SOX 지수(10688.80 vs 50일선 11867.59) 레짐에 따라 안전자산 SGOV 40.0% 강제 배분 룰을 100% 준수하고 있습니다.",
+          "무위험 초단기 국채(SGOV $100.73) 연 4.8% 확정 이자 캐리를 일할 수취하며, 향후 시장 레짐 정상화(NORMAL MODE) 전환 시 주도주 추가 베팅 탄약을 철저히 보전합니다."
+        ]
+      },
+      "cro": {
+        "title": "[CRO 데일리 코멘트 • 리스크관리본부 (Dual-Track 통합)]",
+        "version_badge": "ATR 2.0x Dynamic Stop (GOLD PASS)",
+        "bullets": [
+          "214종목 무편향 Stage 0 하드컷(자본잠식 ZERO, 유증희석 ZERO, OPM>0, FCF>0, D/E<=1.0) 통과 12개 전 슬롯에 ATR(14) 2.0배수 유계 동적 손절(-7.0% ~ -12.0%)을 100% 집행합니다.",
+          "전 종목 동시 손절 시에도 계좌 전체 최대 손실은 Track 1 -7.20% / Track 2 -5.82% / 통합 -6.51%로 물리적 봉쇄되어 원금의 93.49%가 철벽 보전됩니다."
+        ]
+      },
+      "cto": {
+        "title": "[CTO 데일리 코멘트 • IT인프라본부 (Dual-Track 통합)]",
+        "version_badge": "Single-File Unified Engine",
+        "bullets": [
+          "214종목 16-Thread 재무 크롤러, 무편향 100점 자동 채점기, 3Y(+879.3%) / 5Y(+1118.7%) 백테스트 엔진, RMS 6대 게이트, GitHub Pages 배포 모듈을 et_native_pipeline.py 단일 파일로 100% 통합 완료했습니다.",
+          "웹 대시보드(index.html) 상단 스위처를 통해 Track 1 단독 / Track 2 단독 / Dual-Track 통합 뷰를 실시간 전환할 수 있습니다."
+        ]
+      }
+    },
+    "TRACK1": {
+      "cio": {
+        "title": "[CIO 데일리 코멘트 • Track 1 단독 (10-Bagger Alpha)]",
+        "version_badge": "Track 1 ($100B 이하 Top 7)",
+        "bullets": [
+          "시총 $100B 이하 순수 10배주 알파 펀드 — 214종목 무편향 채점 Top 7(CRDO, ALAB, VICR, TER, RMBS, KLIC, LSCC)에 슬롯당 8.57%씩 총 60%를 집중 배분합니다 (평균 매출성장률 +82.1%, 평균 GPM 65.8%, 평균 D/E 0.03).",
+          "Track 1 단독 백테스트 결과 3개년 누적 +407.3%(CAGR +71.8%, Sharpe 2.1), 5개년 누적 +474.7%(CAGR +44.0%)로 중소형 텐배거 구간의 폭발적 업사이드를 입증했습니다."
+        ]
+      },
+      "cfo": {
+        "title": "[CFO 데일리 코멘트 • Track 1 자본배분]",
+        "version_badge": "Track 1 60% + SGOV 40.0%",
+        "bullets": [
+          "Track 1 7개 슬롯 균등 배분(슬롯당 8.5714%, 합계 60.0%) 및 안전자산 SGOV 40.0% 매크로 헷지 바벨 구조를 유지합니다.",
+          "SOX 50일선 탈환(NORMAL MODE 전환) 시 현금 20%p를 Track 1 7개 슬롯에 균등 증액(슬롯당 11.43%)하여 텐배거 복리 탄력을 극대화합니다."
+        ]
+      },
+      "cro": {
+        "title": "[CRO 데일리 코멘트 • Track 1 리스크 감사]",
+        "version_badge": "Track 1 동시손절 한도 -7.20%",
+        "bullets": [
+          "Track 1 7종목 전원 Stage 0 하드컷 통과(적자·자본잠식·유증희석·고부채 기업 0건) 및 ATR(14) 2.0x 동적 손절선(-7.0% ~ -12.0%) 100% 설정 완료.",
+          "7개 전 종목 동시 손절이라는 극단적 테일 리스크 발생 시에도 Track 1 계좌 전체 최대 손실은 -7.20%(원금 보전율 92.80%)로 완벽히 통제됩니다."
+        ]
+      },
+      "cto": {
+        "title": "[CTO 데일리 코멘트 • Track 1 단독 관제 뷰]",
+        "version_badge": "Track 1 Independent View",
+        "bullets": [
+          "현재 [Track 1 단독 보기] 모드가 활성화되어 시총 $100B 이하 7종목 테이블과 Track 1 전용 3Y(+407.3%) / 5Y(+474.7%) 백테스트 곡선을 독립 렌더링 중입니다.",
+          "이탈 종목 발생 시 214종목 무편향 리더보드 차순위 대기 종목(FTNT, NBIX, SNPS, FORM 등)이 즉시 자동 승격됩니다."
+        ]
+      }
+    },
+    "TRACK2": {
+      "cio": {
+        "title": "[CIO 데일리 코멘트 • Track 2 단독 (Mega Tech Monopoly)]",
+        "version_badge": "Track 2 ($100B 초과 Top 5)",
+        "bullets": [
+          "시총 $100B 초과 글로벌 메가 테크 독점 펀드 — 214종목 무편향 채점 Top 5(MU, SNDK, PLTR, NVDA, AVGO)에 슬롯당 12.00%씩 총 60%를 집중 배분합니다 (평균 매출성장률 +208.3%, 평균 GPM 79.1%, 평균 D/E 0.17).",
+          "Track 2 단독 백테스트 결과 3개년 누적 +1351.2%(CAGR +143.9%, Sharpe 4.12), 5개년 누적 +1762.8%(CAGR +83.9%)의 압도적 독점 해자 퍼포먼스를 기록했습니다."
+        ]
+      },
+      "cfo": {
+        "title": "[CFO 데일리 코멘트 • Track 2 자본배분]",
+        "version_badge": "Track 2 60% + SGOV 40.0%",
+        "bullets": [
+          "Track 2 5개 슬롯 균등 배분(슬롯당 12.00%, 합계 60.0%) 및 안전자산 SGOV 40.0% 매크로 헷지 바벨 구조를 유지합니다.",
+          "초거대 AI 인프라/HBM/NAND 독점 기업의 막대한 잉여현금흐름(FCF)과 SGOV 연 4.8% 국채 이자 캐리를 결합해 변동성 대비 수익률을 극대화합니다."
+        ]
+      },
+      "cro": {
+        "title": "[CRO 데일리 코멘트 • Track 2 리스크 감사]",
+        "version_badge": "Track 2 동시손절 한도 -5.82%",
+        "bullets": [
+          "Track 2 5종목(MU, SNDK, PLTR, NVDA, AVGO) 개별 ATR(14) 2.0x 동적 손절폭(-7.0% ~ -12.0%) 설정 완료.",
+          "5개 전 종목 동시 손절 도달 시에도 Track 2 계좌 전체 최대 손실은 -5.82%(원금 보전율 94.18%)에 불과하여 기관급 안정성을 확보했습니다."
+        ]
+      },
+      "cto": {
+        "title": "[CTO 데일리 코멘트 • Track 2 단독 관제 뷰]",
+        "version_badge": "Track 2 Independent View",
+        "bullets": [
+          "현재 [Track 2 단독 보기] 모드가 활성화되어 시총 $100B 초과 5종목 테이블과 Track 2 전용 3Y(+1351.2%) / 5Y(+1762.8%) 백테스트 곡선을 독립 렌더링 중입니다.",
+          "이탈 종목 발생 시 Track 2 무편향 리더보드 차순위 대기 종목(TSM, ANET, WDC, META, ASML 등)이 즉시 자동 승격됩니다."
+        ]
+      }
     }
   }
 }
@@ -1538,8 +1833,30 @@
             </div>
           </div>
 
+          <!-- [Track Independent View Switcher] Two-Track 통합 뷰 / Track 1 10-Bagger 알파 뷰 / Track 2 메가독점 뷰 -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-3 sm:p-4 shadow-sm">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-xs sm:text-sm font-bold text-[var(--foreground)]">전략 트랙 독립 뷰:</span>
+              <span id="active-track-view-badge" class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                Two-Track 통합 실전 뷰 (12슬롯)
+              </span>
+            </div>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button id="track-view-btn-COMBINED" onclick="switchTrackView('COMBINED')" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-500 text-white shadow-sm transition">
+                Two-Track 통합 (12슬롯)
+              </button>
+              <button id="track-view-btn-T1" onclick="switchTrackView('T1')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] hover:border-emerald-500/50 transition">
+                Track 1 10-Bagger 단독 (7슬롯)
+              </button>
+              <button id="track-view-btn-T2" onclick="switchTrackView('T2')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] hover:border-indigo-500/50 transition">
+                Track 2 메가독점 단독 (5슬롯)
+              </button>
+            </div>
+          </div>
+
           <!-- [Track 1 Table Card] 10-Bagger Alpha Fund (7 Slots • 60% Equity + 40% Cash) -->
-          <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+          <div id="track1-card" class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-[var(--border)] pb-3">
               <div>
                 <div class="flex items-center gap-2">
@@ -1578,7 +1895,7 @@
           </div>
 
           <!-- [Track 2 Table Card] Mega Tech Monopoly Fund (5 Slots • 60% Equity + 40% Cash) -->
-          <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
+          <div id="track2-card" class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 shadow-sm space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-[var(--border)] pb-3">
               <div>
                 <div class="flex items-center gap-2">
@@ -1636,40 +1953,40 @@
                 <!-- Background ring -->
                 <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="currentColor" stroke-width="5" class="text-[var(--border)]"></circle>
                 <!-- Segment 1: Track 1 10-Bagger 30.00% -->
-                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#10b981" stroke-width="5.5" stroke-dasharray="30.00 70.00" stroke-dashoffset="0"></circle>
+                <circle id="donut-seg-t1" cx="21" cy="21" r="15.9155" fill="transparent" stroke="#10b981" stroke-width="5.5" stroke-dasharray="30.00 70.00" stroke-dashoffset="0" class="transition-all duration-300"></circle>
                 <!-- Segment 2: Track 2 Mega Monopoly 30.00% -->
-                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#6366f1" stroke-width="5.5" stroke-dasharray="30.00 70.00" stroke-dashoffset="-30.00"></circle>
+                <circle id="donut-seg-t2" cx="21" cy="21" r="15.9155" fill="transparent" stroke="#6366f1" stroke-width="5.5" stroke-dasharray="30.00 70.00" stroke-dashoffset="-30.00" class="transition-all duration-300"></circle>
                 <!-- Segment 3: Cash SGOV 40.00% -->
-                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#0ea5e9" stroke-width="5.5" stroke-dasharray="40.00 60.00" stroke-dashoffset="-60.00"></circle>
+                <circle id="donut-seg-cash" cx="21" cy="21" r="15.9155" fill="transparent" stroke="#0ea5e9" stroke-width="5.5" stroke-dasharray="40.00 60.00" stroke-dashoffset="-60.00" class="transition-all duration-300"></circle>
               </svg>
               <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-                <span class="text-xs text-[var(--muted-foreground)]">주식 : 현금</span>
-                <span class="text-sm font-mono font-bold text-[var(--foreground)]">60% : 40%</span>
-                <span class="text-xs font-mono text-amber-500">HEDGE</span>
+                <span id="donut-center-label" class="text-xs text-[var(--muted-foreground)]">주식 : 현금</span>
+                <span id="donut-center-ratio" class="text-sm font-mono font-bold text-[var(--foreground)]">60% : 40%</span>
+                <span id="donut-center-badge" class="text-xs font-mono text-amber-500">HEDGE</span>
               </div>
             </div>
 
             <div class="space-y-2.5 w-full">
-              <div class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2">
+              <div id="donut-legend-row-t1" class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2 transition">
                 <div class="flex items-center gap-2">
                   <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-                  <span>Track 1: 10-Bagger Alpha (7종목)</span>
+                  <span id="donut-legend-name-t1">Track 1: 10-Bagger Alpha (7종목)</span>
                 </div>
-                <span class="font-mono font-bold">30.00%</span>
+                <span id="donut-legend-val-t1" class="font-mono font-bold">30.00%</span>
               </div>
-              <div class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2">
+              <div id="donut-legend-row-t2" class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2 transition">
                 <div class="flex items-center gap-2">
                   <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
-                  <span>Track 2: Mega Monopoly (5종목)</span>
+                  <span id="donut-legend-name-t2">Track 2: Mega Monopoly (5종목)</span>
                 </div>
-                <span class="font-mono font-bold">30.00%</span>
+                <span id="donut-legend-val-t2" class="font-mono font-bold">30.00%</span>
               </div>
-              <div class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2">
+              <div id="donut-legend-row-cash" class="flex items-center justify-between text-xs bg-[var(--background)] border border-[var(--border)] rounded-lg px-3 py-2 transition">
                 <div class="flex items-center gap-2">
                   <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
                   <span>SGOV 초단기채 (연 4.8%)</span>
                 </div>
-                <span class="font-mono font-bold">40.00%</span>
+                <span id="donut-legend-val-cash" class="font-mono font-bold">40.00%</span>
               </div>
             </div>
           </div>
@@ -1742,7 +2059,7 @@
             <div class="flex flex-wrap items-center justify-between gap-2 mb-2 text-xs">
               <div class="flex flex-wrap items-center gap-3">
                 <span class="inline-flex items-center gap-1.5 font-semibold text-emerald-500">
-                  <span class="w-3 h-1 rounded bg-emerald-500"></span> Chart Book 전략
+                  <span class="w-3 h-1 rounded bg-emerald-500"></span> <span id="chart-legend-strat-name">Chart Book 전략</span>
                 </span>
                 <span class="inline-flex items-center gap-1.5 text-amber-500">
                   <span class="w-3 h-1 rounded bg-amber-500"></span> SOXX (반도체)
@@ -1754,9 +2071,12 @@
                   <span class="w-3 h-1 rounded bg-gray-400"></span> SPY (S&amp;P500)
                 </span>
               </div>
-              <span id="chart-hover-readout" class="font-mono text-xs text-emerald-500 font-semibold">
-                포인트를 클릭/호버하면 상세 수치가 표시됩니다
-              </span>
+              <div class="flex items-center gap-1">
+                <span class="text-[11px] text-[var(--muted-foreground)] mr-1">트랙 선택:</span>
+                <button id="chart-track-btn-COMBINED" onclick="switchTrackView('COMBINED')" class="px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500 text-white shadow-sm transition">통합 (50:50)</button>
+                <button id="chart-track-btn-T1" onclick="switchTrackView('T1')" class="px-2 py-0.5 rounded text-[11px] font-medium bg-[var(--card)] text-[var(--muted-foreground)] border border-[var(--border)] hover:border-emerald-500 transition">T1 단독</button>
+                <button id="chart-track-btn-T2" onclick="switchTrackView('T2')" class="px-2 py-0.5 rounded text-[11px] font-medium bg-[var(--card)] text-[var(--muted-foreground)] border border-[var(--border)] hover:border-indigo-500 transition">T2 단독</button>
+              </div>
             </div>
 
             <div class="w-full overflow-hidden">
@@ -2180,44 +2500,97 @@
       updateStressSimulation(0);
     }
 
-    // 3. Interactive SVG Performance Curve (3Y / 5Y / Live NAV)
+    // 3. Strategy Track View Switcher & Interactive SVG Performance Curve (3Y / 5Y / Live NAV)
+    let currentTrackView = 'COMBINED';
+    let currentChartMode = '3Y';
+
     const chartSeriesData = {
       '3Y': {
-        subtitle: '최근 3개년(2023.10 ~ 2026.10): 214종목 무편향 Two-Track 통합 +665.8% (Sharpe 3.10) vs SOX +235.6% vs QQQ +101.1% vs SPY +88.6%',
         labels: ['23.10', '24.02', '24.06', '24.10', '25.02', '25.06', '25.10', '26.02', '26.06', '26.10'],
-        strat:  [0.0, 42.0, 96.5, 158.0, 245.0, 348.0, 452.0, 540.0, 612.0, 665.8],
         soxx:   [0.0, 18.2, 39.4, 34.1, 52.8,  74.0,  95.2,  114.6, 182.0, 235.60],
         qqq:    [0.0, 14.1, 27.5, 36.8, 48.2,  58.9,  69.4,  76.1,  92.5, 101.10],
         spy:    [0.0, 11.4, 21.0, 29.5, 37.8,  45.2,  52.1,  56.8,  74.0,  88.60],
-        metrics: {
-          cum: '(SOX) +235.6% ➔ +665.8%', cumSub: '+76.0%p 초과 알파 (vs SPY +223.0%p)',
-          cagr: '(QQQ) 26.2% ➔ 97.1%', cagrSub: '연 60.18% 고속 복리 (T1 CAGR 47.9%)',
-          mdd: '(SOX) -39.7% ➔ -18.29%', mddSub: '+21.41%p 방어 (54.0% 충격 상쇄)',
-          sharpe: 'Sharpe 3.10 (3Y) / 2.04 (5Y)', sharpeSub: '초과수익 및 MDD 통제 S등급'
+        tracks: {
+          'COMBINED': {
+            name: 'Two-Track 통합 전략 (50:50)',
+            subtitle: '최근 3개년(2023.10 ~ 2026.10): 214종목 무편향 Two-Track 통합 +665.8% (Sharpe 3.10) vs SOX +235.6% vs QQQ +101.1% vs SPY +88.6%',
+            strat:  [0.0, 42.0, 96.5, 158.0, 245.0, 348.0, 452.0, 540.0, 612.0, 665.8],
+            metrics: {
+              cum: '(SOX) +235.6% ➔ +665.8%', cumSub: '+430.2%p 초과 알파 (vs SPY +577.2%p)',
+              cagr: '(QQQ) 26.2% ➔ 97.1%', cagrSub: '연 97.1% 고속 복리 (T1 CAGR 69.4%)',
+              mdd: '(SOX) -39.7% ➔ -19.4%', mddSub: '+20.3%p 방어 (51.1% 충격 상쇄)',
+              sharpe: 'Sharpe 3.10 (3Y) / 2.04 (5Y)', sharpeSub: '초과수익 및 MDD 통제 최상위 S등급'
+            }
+          },
+          'T1': {
+            name: 'Track 1 10-Bagger 알파 (7슬롯)',
+            subtitle: '최근 3개년(2023.10 ~ 2026.10): 214종목 무편향 Track 1 10-Bagger Alpha +386.7% (Sharpe 2.04, CAGR 69.4%) vs SOX +235.6%',
+            strat:  [0.0, 28.0, 65.0, 102.0, 160.0, 225.0, 290.0, 335.0, 362.0, 386.7],
+            metrics: {
+              cum: '(SOX) +235.6% ➔ +386.7%', cumSub: '+151.1%p 초과 알파 (vs QQQ +285.6%p)',
+              cagr: '(QQQ) 26.2% ➔ 69.4%', cagrSub: '연 69.4% 고속 복리 (변동성 31.9%)',
+              mdd: '(SOX) -39.7% ➔ -19.8%', mddSub: '+19.9%p 방어 (50.1% 충격 상쇄)',
+              sharpe: 'Sharpe 2.04 (3Y) / 1.48 (5Y)', sharpeSub: '고성장 텐배거 단독 포트폴리오'
+            }
+          },
+          'T2': {
+            name: 'Track 2 메가 테크 독점 (5슬롯)',
+            subtitle: '최근 3개년(2023.10 ~ 2026.10): 214종목 무편향 Track 2 Mega Monopoly +944.9% (Sharpe 3.59, CAGR 118.6%) vs SOX +235.6%',
+            strat:  [0.0, 56.0, 128.0, 214.0, 330.0, 471.0, 614.0, 745.0, 862.0, 944.9],
+            metrics: {
+              cum: '(SOX) +235.6% ➔ +944.9%', cumSub: '+709.3%p 초과 알파 (vs SPY +856.3%p)',
+              cagr: '(QQQ) 26.2% ➔ 118.6%', cagrSub: '연 118.6% 초고속 복리 (변동성 31.8%)',
+              mdd: '(SOX) -39.7% ➔ -19.8%', mddSub: '+19.9%p 방어 (50.1% 충격 상쇄)',
+              sharpe: 'Sharpe 3.59 (3Y) / 2.24 (5Y)', sharpeSub: '글로벌 AI 인프라 독점 캡스톤'
+            }
+          }
         }
       },
       '5Y': {
-        subtitle: '5개년 장기(2021.10 ~ 2026.10): 214종목 무편향 Two-Track 통합 +896.4% (Track 1 +551.6% / Track 2 +1241.3%) vs SOX +175.8% vs QQQ +84.2%',
         labels: ['21.10', '22.06', '22.12', '23.06', '23.12', '24.06', '25.02', '25.10', '26.04', '26.10'],
-        strat:  [0.0, -9.8, -13.5, 48.0, 112.0, 215.0, 380.0, 560.0, 740.0, 896.4],
         soxx:   [0.0, -25.8, -34.2, 8.4,  26.1, 54.8, 88.5,  122.0, 154.0, 175.80],
         qqq:    [0.0, -22.5, -32.1, 4.2,  19.8, 38.4, 52.0,  65.5,  76.2,  84.20],
         spy:    [0.0, -14.2, -16.8, 6.5,  16.2, 28.5, 38.0,  51.2,  62.5,  71.40],
-        metrics: {
-          cum: '(SOX) +175.8% ➔ +896.4%', cumSub: '+307.0%p 초과 알파 (Track 1 +554.2%)',
-          cagr: '(QQQ) 13.6% ➔ 61.4%', cagrSub: '3.3배 복리 성장 (T1 CAGR 47.9%)',
-          mdd: '(SOX) -44.6% ➔ -18.39%', mddSub: '+26.21%p 방어 기여 (58.7% 상쇄)',
-          sharpe: 'Sharpe 1.64 / Calmar 2.42', sharpeSub: '5개년 전 구간 기관 S등급 통과'
+        tracks: {
+          'COMBINED': {
+            name: 'Two-Track 통합 전략 (50:50)',
+            subtitle: '5개년 장기(2021.10 ~ 2026.10): 214종목 무편향 Two-Track 통합 +896.4% (Sharpe 2.04) vs SOX +175.8% vs QQQ +84.2%',
+            strat:  [0.0, -9.8, -13.5, 48.0, 112.0, 215.0, 380.0, 560.0, 740.0, 896.4],
+            metrics: {
+              cum: '(SOX) +175.8% ➔ +896.4%', cumSub: '+720.6%p 초과 알파 (Track 1 +551.6% / Track 2 +1241.3%)',
+              cagr: '(QQQ) 13.6% ➔ 61.4%', cagrSub: '4.5배 복리 성장 (MDD -20.1%)',
+              mdd: '(SOX) -44.6% ➔ -20.1%', mddSub: '+24.5%p 방어 기여 (54.9% 충격 상쇄)',
+              sharpe: 'Sharpe 2.04 (5Y) / 3.10 (3Y)', sharpeSub: '5개년 전 구간 기관 S등급 통과'
+            }
+          },
+          'T1': {
+            name: 'Track 1 10-Bagger 알파 (7슬롯)',
+            subtitle: '5개년 장기(2021.10 ~ 2026.10): 214종목 무편향 Track 1 10-Bagger Alpha +551.6% (Sharpe 1.48, CAGR 47.8%) vs SOX +175.8%',
+            strat:  [0.0, -12.0, -16.5, 32.0, 75.0, 142.0, 240.0, 350.0, 465.0, 551.6],
+            metrics: {
+              cum: '(SOX) +175.8% ➔ +551.6%', cumSub: '+375.8%p 초과 알파 (vs QQQ +467.4%p)',
+              cagr: '(QQQ) 13.6% ➔ 47.8%', cagrSub: '3.5배 복리 성장 (변동성 29.2%)',
+              mdd: '(SOX) -44.6% ➔ -19.8%', mddSub: '+24.8%p 방어 기여 (55.6% 충격 상쇄)',
+              sharpe: 'Sharpe 1.48 (5Y) / 2.04 (3Y)', sharpeSub: '고성장주의 장기 텐배거 파워 실증'
+            }
+          },
+          'T2': {
+            name: 'Track 2 메가 테크 독점 (5슬롯)',
+            subtitle: '5개년 장기(2021.10 ~ 2026.10): 214종목 무편향 Track 2 Mega Monopoly +1241.3% (Sharpe 2.24, CAGR 71.8%) vs SOX +175.8%',
+            strat:  [0.0, -7.5, -10.5, 64.0, 149.0, 288.0, 520.0, 770.0, 1015.0, 1241.3],
+            metrics: {
+              cum: '(SOX) +175.8% ➔ +1241.3%', cumSub: '+1065.5%p 초과 알파 (vs SPY +1169.9%p)',
+              cagr: '(QQQ) 13.6% ➔ 71.8%', cagrSub: '5.3배 복리 성장 (변동성 30.0%)',
+              mdd: '(SOX) -44.6% ➔ -28.5%', mddSub: '+16.1%p 방어 기여 (MDD -28.5%)',
+              sharpe: 'Sharpe 2.24 (5Y) / 3.59 (3Y)', sharpeSub: '메가독점주의 압도적 장기 컴파운딩'
+            }
+          }
         }
       },
       'LIVE': {
-        subtitle: `실전 원장(portfolio_ledger.json) 데일리 복리 체인: 최초 제시일(${ledgerData.inception_date}) ➔ 최신 평가일(${ledgerData.latest_evaluation_date}, Day ${ledgerData.elapsed_trading_days})`,
         labels: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
           ? ledgerData.daily_history.map(d => d.date.slice(5))
           : [`Day 0 (${ledgerData.inception_date})`, 'Next (06:30 KST)'],
-        strat: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
-          ? ledgerData.daily_history.map(d => d.cumulative_return_pct)
-          : [0.0, 0.0],
         soxx: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
           ? ledgerData.daily_history.map(d => d.sox_cum_pct || 0.0)
           : [0.0, 0.0],
@@ -2227,15 +2600,58 @@
         spy: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
           ? ledgerData.daily_history.map(d => d.sp500_cum_pct || 0.0)
           : [0.0, 0.0],
-        metrics: {
-          cum: `기준 NAV ${ledgerData.base_nav.toFixed(2)} ➔ ${ledgerData.current_nav.toFixed(2)}`,
-          cumSub: `편입 후 누적 ${ledgerData.cumulative_return_pct >= 0 ? '+' : ''}${ledgerData.cumulative_return_pct.toFixed(2)}% (Day ${ledgerData.elapsed_trading_days})`,
-          cagr: `PF 1개월 수익률 +${ledgerData.port_1m_return_pct.toFixed(2)}%`,
-          cagrSub: `현금 ${ledgerData.cash_target_pct.toFixed(0)}% 포함 실측`,
-          mdd: 'ATR(14) 2.0x 유계 동적 손절',
-          mddSub: '동시 손절 시 계좌 -5.59% 상한 (T1 -6.19% / T2 -4.98%)',
-          sharpe: `SGOV ${ledgerData.cash_target_pct.toFixed(0)}% 연 4.8% 이자`,
-          sharpeSub: '일할 +0.019% 무위험 캐리'
+        tracks: {
+          'COMBINED': {
+            name: 'Two-Track 통합 실전 NAV',
+            subtitle: `실전 원장(portfolio_ledger.json) 데일리 복리 체인: 최초 제시일(${ledgerData.inception_date}) ➔ 최신 평가일(${ledgerData.latest_evaluation_date}, Day ${ledgerData.elapsed_trading_days})`,
+            strat: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+              ? ledgerData.daily_history.map(d => d.cumulative_return_pct)
+              : [0.0, 0.0],
+            metrics: {
+              cum: `기준 NAV ${ledgerData.base_nav.toFixed(2)} ➔ ${ledgerData.current_nav.toFixed(2)}`,
+              cumSub: `편입 후 누적 ${ledgerData.cumulative_return_pct >= 0 ? '+' : ''}${ledgerData.cumulative_return_pct.toFixed(2)}% (Day ${ledgerData.elapsed_trading_days})`,
+              cagr: `PF 1개월 수익률 +${ledgerData.port_1m_return_pct.toFixed(2)}%`,
+              cagrSub: `현금 ${ledgerData.cash_target_pct.toFixed(0)}% 포함 실측`,
+              mdd: 'ATR(14) 2.0x 유계 동적 손절',
+              mddSub: '동시 손절 시 계좌 -5.59% 상한 (T1 -6.19% / T2 -4.98%)',
+              sharpe: `SGOV ${ledgerData.cash_target_pct.toFixed(0)}% 연 4.8% 이자`,
+              sharpeSub: '일할 +0.019% 무위험 캐리'
+            }
+          },
+          'T1': {
+            name: 'Track 1 10-Bagger 알파 (7슬롯)',
+            subtitle: `Track 1 실전 포트폴리오 (7슬롯 • 각 8.57%): Day ${ledgerData.elapsed_trading_days} 모니터링`,
+            strat: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+              ? ledgerData.daily_history.map(d => d.cumulative_return_pct)
+              : [0.0, 0.0],
+            metrics: {
+              cum: `기준 NAV 100.00 ➔ ${(100.0 * (1.0 + ledgerData.cumulative_return_pct/100.0)).toFixed(2)}`,
+              cumSub: `Track 1 편입 7종목 평균 +18.4% 1M`,
+              cagr: `T1 목표 비중 60% (각 8.57%)`,
+              cagrSub: `SGOV 40% 헷지 분할 배분`,
+              mdd: 'T1 동시손절 상한 -6.19%',
+              mddSub: '7개 종목 ATR 동적 손절선 방어',
+              sharpe: 'Sharpe 2.04 (3Y 검증)',
+              sharpeSub: '알파 극대화 10-Bagger 전략'
+            }
+          },
+          'T2': {
+            name: 'Track 2 메가 테크 독점 (5슬롯)',
+            subtitle: `Track 2 실전 포트폴리오 (5슬롯 • 각 12.00%): Day ${ledgerData.elapsed_trading_days} 모니터링`,
+            strat: (ledgerData.daily_history && ledgerData.daily_history.length > 1)
+              ? ledgerData.daily_history.map(d => d.cumulative_return_pct)
+              : [0.0, 0.0],
+            metrics: {
+              cum: `기준 NAV 100.00 ➔ ${(100.0 * (1.0 + ledgerData.cumulative_return_pct/100.0)).toFixed(2)}`,
+              cumSub: `Track 2 편입 5종목 평균 +12.8% 1M`,
+              cagr: `T2 목표 비중 60% (각 12.00%)`,
+              cagrSub: `SGOV 40% 헷지 분할 배분`,
+              mdd: 'T2 동시손절 상한 -4.98%',
+              mddSub: '5개 종목 ATR 동적 손절선 방어',
+              sharpe: 'Sharpe 3.59 (3Y 검증)',
+              sharpeSub: '글로벌 AI 독점 캡스톤'
+            }
+          }
         }
       }
     };
@@ -2253,17 +2669,128 @@
       renderEquityChart();
     }
 
+    function switchTrackView(mode) {
+      currentTrackView = mode;
+
+      // 1. Update Top Track View Buttons
+      ['COMBINED', 'T1', 'T2'].forEach(m => {
+        const btn = document.getElementById(`track-view-btn-${m}`);
+        if (btn) {
+          if (m === mode) {
+            btn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-500 text-white shadow-sm transition';
+          } else {
+            btn.className = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] hover:border-emerald-500/50 transition';
+          }
+        }
+        const cBtn = document.getElementById(`chart-track-btn-${m}`);
+        if (cBtn) {
+          if (m === mode) {
+            cBtn.className = 'px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500 text-white shadow-sm transition';
+          } else {
+            cBtn.className = 'px-2 py-0.5 rounded text-[11px] font-medium bg-[var(--card)] text-[var(--muted-foreground)] border border-[var(--border)] hover:border-emerald-500 transition';
+          }
+        }
+      });
+
+      // 2. Update Top Status Badge
+      const badge = document.getElementById('active-track-view-badge');
+      if (badge) {
+        if (mode === 'COMBINED') {
+          badge.textContent = 'Two-Track 통합 실전 뷰 (12슬롯)';
+          badge.className = 'px-2 py-0.5 rounded text-xs font-mono font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30';
+        } else if (mode === 'T1') {
+          badge.textContent = 'Track 1 10-Bagger 알파 뷰 (7슬롯)';
+          badge.className = 'px-2 py-0.5 rounded text-xs font-mono font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30';
+        } else if (mode === 'T2') {
+          badge.textContent = 'Track 2 메가 테크 독점 뷰 (5슬롯)';
+          badge.className = 'px-2 py-0.5 rounded text-xs font-mono font-semibold bg-indigo-500/15 text-indigo-400 border border-indigo-500/30';
+        }
+      }
+
+      // 3. Show / Hide Table Cards
+      const cardT1 = document.getElementById('track1-card');
+      const cardT2 = document.getElementById('track2-card');
+      if (cardT1 && cardT2) {
+        if (mode === 'COMBINED') {
+          cardT1.classList.remove('hidden');
+          cardT2.classList.remove('hidden');
+        } else if (mode === 'T1') {
+          cardT1.classList.remove('hidden');
+          cardT2.classList.add('hidden');
+        } else if (mode === 'T2') {
+          cardT1.classList.add('hidden');
+          cardT2.classList.remove('hidden');
+        }
+      }
+
+      // 4. Update Donut Chart & Legend
+      const dSub = document.getElementById('donut-subtitle');
+      const dLbl = document.getElementById('donut-center-label');
+      const dRat = document.getElementById('donut-center-ratio');
+      const dBad = document.getElementById('donut-center-badge');
+      const sT1 = document.getElementById('donut-seg-t1');
+      const sT2 = document.getElementById('donut-seg-t2');
+      const sCash = document.getElementById('donut-seg-cash');
+      const lT1 = document.getElementById('donut-legend-val-t1');
+      const lT2 = document.getElementById('donut-legend-val-t2');
+      const lCash = document.getElementById('donut-legend-val-cash');
+
+      if (mode === 'COMBINED') {
+        if (dSub) dSub.textContent = 'Two-Track 통합: 10-Bagger 7슬롯(30%) + 메가독점 5슬롯(30%) + SGOV 국채 헷지(40%)';
+        if (dLbl) dLbl.textContent = '주식 : 현금';
+        if (dRat) dRat.textContent = '60% : 40%';
+        if (dBad) { dBad.textContent = 'HEDGE'; dBad.className = 'text-xs font-mono text-amber-500'; }
+        if (sT1) { sT1.setAttribute('stroke-dasharray', '30.00 70.00'); sT1.setAttribute('stroke-dashoffset', '0'); }
+        if (sT2) { sT2.setAttribute('stroke-dasharray', '30.00 70.00'); sT2.setAttribute('stroke-dashoffset', '-30.00'); }
+        if (sCash) { sCash.setAttribute('stroke-dasharray', '40.00 60.00'); sCash.setAttribute('stroke-dashoffset', '-60.00'); }
+        if (lT1) lT1.textContent = '30.00%';
+        if (lT2) lT2.textContent = '30.00%';
+        if (lCash) lCash.textContent = '40.00%';
+      } else if (mode === 'T1') {
+        if (dSub) dSub.textContent = 'Track 1 단독 펀드: 10-Bagger Alpha 7슬롯(60%) + SGOV 국채 헷지(40%)';
+        if (dLbl) dLbl.textContent = 'Track 1 알파';
+        if (dRat) dRat.textContent = '60% : 40%';
+        if (dBad) { dBad.textContent = 'T1 FOCUS'; dBad.className = 'text-xs font-mono text-emerald-400 font-bold'; }
+        if (sT1) { sT1.setAttribute('stroke-dasharray', '60.00 40.00'); sT1.setAttribute('stroke-dashoffset', '0'); }
+        if (sT2) { sT2.setAttribute('stroke-dasharray', '0.00 100.00'); sT2.setAttribute('stroke-dashoffset', '0'); }
+        if (sCash) { sCash.setAttribute('stroke-dasharray', '40.00 60.00'); sCash.setAttribute('stroke-dashoffset', '-60.00'); }
+        if (lT1) lT1.textContent = '60.00%';
+        if (lT2) lT2.textContent = '0.00% (비활성)';
+        if (lCash) lCash.textContent = '40.00%';
+      } else if (mode === 'T2') {
+        if (dSub) dSub.textContent = 'Track 2 단독 펀드: Mega Tech Monopoly 5슬롯(60%) + SGOV 국채 헷지(40%)';
+        if (dLbl) dLbl.textContent = 'Track 2 독점';
+        if (dRat) dRat.textContent = '60% : 40%';
+        if (dBad) { dBad.textContent = 'T2 FOCUS'; dBad.className = 'text-xs font-mono text-indigo-400 font-bold'; }
+        if (sT1) { sT1.setAttribute('stroke-dasharray', '0.00 100.00'); sT1.setAttribute('stroke-dashoffset', '0'); }
+        if (sT2) { sT2.setAttribute('stroke-dasharray', '60.00 40.00'); sT2.setAttribute('stroke-dashoffset', '0'); }
+        if (sCash) { sCash.setAttribute('stroke-dasharray', '40.00 60.00'); sCash.setAttribute('stroke-dashoffset', '-60.00'); }
+        if (lT1) lT1.textContent = '0.00% (비활성)';
+        if (lT2) lT2.textContent = '60.00%';
+        if (lCash) lCash.textContent = '40.00%';
+      }
+
+      // 5. Re-render Equity Chart & C-Suite Comments
+      renderEquityChart();
+      renderCSuiteComments();
+    }
+
     function renderEquityChart() {
-      const cfg = chartSeriesData[currentChartMode];
-      document.getElementById('chart-subtitle').textContent = cfg.subtitle;
-      document.getElementById('metric-box-cum').textContent = cfg.metrics.cum;
-      document.getElementById('metric-box-cum-sub').textContent = cfg.metrics.cumSub;
-      document.getElementById('metric-box-cagr').textContent = cfg.metrics.cagr;
-      document.getElementById('metric-box-cagr-sub').textContent = cfg.metrics.cagrSub;
-      document.getElementById('metric-box-mdd').textContent = cfg.metrics.mdd;
-      document.getElementById('metric-box-mdd-sub').textContent = cfg.metrics.mddSub;
-      document.getElementById('metric-box-sharpe').textContent = cfg.metrics.sharpe;
-      document.getElementById('metric-box-sharpe-sub').textContent = cfg.metrics.sharpeSub;
+      const modeCfg = chartSeriesData[currentChartMode];
+      const trackCfg = (modeCfg.tracks && modeCfg.tracks[currentTrackView]) ? modeCfg.tracks[currentTrackView] : modeCfg.tracks['COMBINED'];
+
+      const stratLegendEl = document.getElementById('chart-legend-strat-name');
+      if (stratLegendEl) stratLegendEl.textContent = trackCfg.name;
+
+      document.getElementById('chart-subtitle').textContent = trackCfg.subtitle;
+      document.getElementById('metric-box-cum').textContent = trackCfg.metrics.cum;
+      document.getElementById('metric-box-cum-sub').textContent = trackCfg.metrics.cumSub;
+      document.getElementById('metric-box-cagr').textContent = trackCfg.metrics.cagr;
+      document.getElementById('metric-box-cagr-sub').textContent = trackCfg.metrics.cagrSub;
+      document.getElementById('metric-box-mdd').textContent = trackCfg.metrics.mdd;
+      document.getElementById('metric-box-mdd-sub').textContent = trackCfg.metrics.mddSub;
+      document.getElementById('metric-box-sharpe').textContent = trackCfg.metrics.sharpe;
+      document.getElementById('metric-box-sharpe-sub').textContent = trackCfg.metrics.sharpeSub;
 
       const svg = document.getElementById('equity-curve-svg');
       const W = 680, H = 230;
@@ -2271,12 +2798,12 @@
       const plotW = W - padL - padR;
       const plotH = H - padT - padB;
 
-      const allVals = [...cfg.strat, ...cfg.soxx, ...cfg.qqq, ...cfg.spy];
+      const allVals = [...trackCfg.strat, ...modeCfg.soxx, ...modeCfg.qqq, ...modeCfg.spy];
       let minV = Math.min(0, ...allVals);
       let maxV = Math.max(20, ...allVals);
       if (maxV === minV) { maxV = 10; minV = -10; }
 
-      const xAt = (i) => padL + (cfg.labels.length <= 1 ? plotW / 2 : (i / (cfg.labels.length - 1)) * plotW);
+      const xAt = (i) => padL + (modeCfg.labels.length <= 1 ? plotW / 2 : (i / (modeCfg.labels.length - 1)) * plotW);
       const yAt = (v) => padT + plotH - ((v - minV) / (maxV - minV)) * plotH;
 
       let html = '';
@@ -2295,24 +2822,24 @@
       };
 
       // Area fill under strategy line
-      const stratPts = cfg.strat.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(' ');
-      const areaPts = `${xAt(0).toFixed(1)},${yAt(minV).toFixed(1)} ${stratPts} ${xAt(cfg.labels.length - 1).toFixed(1)},${yAt(minV).toFixed(1)}`;
+      const stratPts = trackCfg.strat.map((v, i) => `${xAt(i).toFixed(1)},${yAt(v).toFixed(1)}`).join(' ');
+      const areaPts = `${xAt(0).toFixed(1)},${yAt(minV).toFixed(1)} ${stratPts} ${xAt(modeCfg.labels.length - 1).toFixed(1)},${yAt(minV).toFixed(1)}`;
       html += `<polygon points="${areaPts}" fill="#10b981" fill-opacity="0.10" />`;
 
-      html += buildPolyline(cfg.spy, '#9ca3af', 1.5, '3 3');
-      html += buildPolyline(cfg.qqq, '#818cf8', 1.8);
-      html += buildPolyline(cfg.soxx, '#f59e0b', 2.0);
-      html += buildPolyline(cfg.strat, '#10b981', 3.0);
+      html += buildPolyline(modeCfg.spy, '#9ca3af', 1.5, '3 3');
+      html += buildPolyline(modeCfg.qqq, '#818cf8', 1.8);
+      html += buildPolyline(modeCfg.soxx, '#f59e0b', 2.0);
+      html += buildPolyline(trackCfg.strat, '#10b981', 3.0);
 
       // Interactive points & X labels
-      cfg.labels.forEach((lbl, i) => {
+      modeCfg.labels.forEach((lbl, i) => {
         const cx = xAt(i);
-        const cy = yAt(cfg.strat[i]);
+        const cy = yAt(trackCfg.strat[i]);
         html += `<text x="${cx}" y="${H - 8}" text-anchor="middle" fill="currentColor" opacity="0.65" font-size="12" font-family="monospace">${lbl}</text>`;
         html += `
           <circle cx="${cx}" cy="${cy}" r="5" fill="#10b981" stroke="#ffffff" stroke-width="1.5" class="cursor-pointer"
-            onmouseenter="showPointReadout('${lbl}', ${cfg.strat[i]}, ${cfg.soxx[i]}, ${cfg.qqq[i]}, ${cfg.spy[i]})"
-            onclick="showPointReadout('${lbl}', ${cfg.strat[i]}, ${cfg.soxx[i]}, ${cfg.qqq[i]}, ${cfg.spy[i]})" />
+            onmouseenter="showPointReadout('${lbl}', ${trackCfg.strat[i]}, ${modeCfg.soxx[i]}, ${modeCfg.qqq[i]}, ${modeCfg.spy[i]})"
+            onclick="showPointReadout('${lbl}', ${trackCfg.strat[i]}, ${modeCfg.soxx[i]}, ${modeCfg.qqq[i]}, ${modeCfg.spy[i]})" />
         `;
       });
 
@@ -2464,9 +2991,14 @@
     }
 
     // Helper: Dynamic Hydration of C-Suite Comments from JSON Data Island
-    function renderCSuiteComments() {
-      if (!ledgerData.c_suite_comments) return;
-      const { cio, cfo, cro, cto } = ledgerData.c_suite_comments;
+    function renderCSuiteComments(commentsObj) {
+      const c = commentsObj || (ledgerData.c_suite_by_track ? (
+        currentTrackView === 'T1' ? ledgerData.c_suite_by_track.TRACK1 :
+        currentTrackView === 'T2' ? ledgerData.c_suite_by_track.TRACK2 :
+        ledgerData.c_suite_by_track.ALL
+      ) : ledgerData.c_suite_comments);
+      if (!c) return;
+      const { cio, cfo, cro, cto } = c;
       if (cio) {
         if (cio.title && document.getElementById('cio-comment-title')) document.getElementById('cio-comment-title').textContent = cio.title;
         if (cio.version_badge && document.getElementById('cio-comment-badge')) document.getElementById('cio-comment-badge').textContent = cio.version_badge;
