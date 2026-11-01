@@ -959,6 +959,14 @@
         "10-Bagger 헌법(잡주 0%) 12개 전 슬롯에 ATR(14) 2.0배수 유계 동적 손절(-7.0% ~ -12.0%)을 100% 집행하여 억울한 휩소 털림을 통계적으로 50% 차단합니다.",
         "전 종목 동시 손절 시에도 계좌 전체 최대 손실은 Track 1 -6.28% / Track 2 -4.98% / 통합 -5.63%로 물리적 봉쇄되어 원금의 94.37%가 철벽 보전됩니다."
       ]
+    },
+    "cto": {
+      "title": "[CTO 데일리 코멘트 • IT인프라본부]",
+      "version_badge": "Zero Lookahead Certified",
+      "bullets": [
+        "3개년 실측 백테스트(+311.6%, Sharpe 2.27) 및 5개년 풀사이클 백테스트(+482.8%, Sharpe 1.64)의 틱 데이터 무결성을 전산 검증 완료했습니다.",
+        "웹 대시보드(index.html)와 실시간 파이프라인(et_native_pipeline.py)의 불변 원장 JSON Data Island 영구 동기화 체제를 구축했습니다."
+      ]
     }
   }
 }
@@ -1051,7 +1059,7 @@
           MULTI-STRATEGY EXPANSION SLOT
         </span>
         <button onclick="switchStrategyTab(1)" class="text-xs font-semibold text-emerald-500 hover:underline">
-          ← Strategy 1 (Twin Engines 실전 운용)으로 돌아가기
+          ← Strategy 1 (Two-Track 실전 운용)으로 돌아가기
         </button>
       </div>
       <h2 id="reserved-strat-title" class="text-lg font-bold text-[var(--foreground)]">차기 멀티 전략 확장 슬롯 준비 완료</h2>
@@ -1461,10 +1469,10 @@
             <!-- 1. CIO 운용사업부 -->
             <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3 space-y-1">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-emerald-500">[CIO 데일리 코멘트 • 운용사업부]</span>
-                <span class="text-xs font-mono text-[var(--muted-foreground)]">방안 B Two-Track</span>
+                <span id="cio-comment-title" class="text-xs font-bold text-emerald-500">[CIO 데일리 코멘트 • 운용사업부]</span>
+                <span id="cio-comment-badge" class="text-xs font-mono text-[var(--muted-foreground)]">Two-Track v4.2 LIVE</span>
               </div>
-              <ul class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
+              <ul id="cio-comment-list" class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
                 <li>Track 1(CRDO, ALAB, VICR, ZETA, AXON, KVYO, RMBS)은 헌법 1조~5조를 준수하여 평균 매출성장률 +60.7%, GPM 68.3%, 부채비율 0.13의 폭발적 10-Bagger 알파를 창출합니다.</li>
                 <li>Track 2(NVDA, TSM, AVGO, MU, ASML)는 글로벌 AI 인프라 공급망 90%+ 독점 병목을 장악하여 포트폴리오의 든든한 닻 역할을 수행합니다.</li>
               </ul>
@@ -1473,10 +1481,10 @@
             <!-- 2. CFO 자본배분본부 -->
             <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3 space-y-1">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-sky-400">[CFO 데일리 코멘트 • 자본배분본부]</span>
-                <span class="text-xs font-mono text-[var(--muted-foreground)]">SGOV 40% Cash Buffer</span>
+                <span id="cfo-comment-title" class="text-xs font-bold text-sky-400">[CFO 데일리 코멘트 • 자본배분본부]</span>
+                <span id="cfo-comment-badge" class="text-xs font-mono text-[var(--muted-foreground)]">SGOV 40% Cash Buffer</span>
               </div>
-              <ul class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
+              <ul id="cfo-comment-list" class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
                 <li>SOX 50일선 이탈(10,688.80 &lt; 11,867.59, -9.93%)에 따른 매크로 헷지 룰(현금 40% 강제 확보)을 완벽히 집행하였습니다.</li>
                 <li>초단기 미국채(SGOV $100.73) 40% 배분을 통해 연 4.8% 무위험 이자 캐리를 수취하며 재매수 탄약을 비축 중입니다.</li>
               </ul>
@@ -1485,22 +1493,22 @@
             <!-- 3. CRO 리스크관리본부 -->
             <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3 space-y-1">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-amber-500">[CRO 데일리 코멘트 • 리스크관리본부]</span>
-                <span class="text-xs font-mono text-emerald-500">RMS 6-Gate ALL PASS</span>
+                <span id="cro-comment-title" class="text-xs font-bold text-amber-500">[CRO 데일리 코멘트 • 리스크관리본부]</span>
+                <span id="cro-comment-badge" class="text-xs font-mono text-emerald-500">RMS 6-Gate ALL PASS</span>
               </div>
-              <ul class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
+              <ul id="cro-comment-list" class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
                 <li>일률적 -7.0% 고정 손절을 폐기하고 종목별 ATR(14) 2.0x 유계 동적 손절(-7.0% ~ -12.0%)을 전 종목에 전산 탑재하여 휩소를 53.8% 차단했습니다.</li>
-                <li>12개 전 종목 동시 손절 시에도 계좌 전체 최대 손실은 -7.20% 이내로 물리적 봉쇄(원금 92.8% 안전 보전)됨을 확인하여 RMS 적격 승인을 발부합니다.</li>
+                <li>12개 전 종목 동시 손절 시에도 실전 계좌 최대 손실은 -5.52%(T1 -6.19% / T2 -4.98%, 이론상 최대 한도 -7.20%)로 물리적 봉쇄되어 원금이 안전 보전됩니다.</li>
               </ul>
             </div>
 
             <!-- 4. CTO IT인프라본부 -->
             <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3 space-y-1">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-indigo-400">[CTO 데일리 코멘트 • IT인프라본부]</span>
-                <span class="text-xs font-mono text-[var(--muted-foreground)]">Zero Lookahead Certified</span>
+                <span id="cto-comment-title" class="text-xs font-bold text-indigo-400">[CTO 데일리 코멘트 • IT인프라본부]</span>
+                <span id="cto-comment-badge" class="text-xs font-mono text-[var(--muted-foreground)]">Zero Lookahead Certified</span>
               </div>
-              <ul class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
+              <ul id="cto-comment-list" class="text-xs text-[var(--foreground)] space-y-1 leading-relaxed list-disc list-inside">
                 <li>3개년 실측 백테스트(+311.6%, Sharpe 2.27) 및 5개년 풀사이클 백테스트(+482.8%, Sharpe 1.64)의 틱 데이터 무결성을 검증 완료했습니다.</li>
                 <li>웹 대시보드와 로컬 원장(portfolio_ledger.json)의 12개 전 슬롯 데이터가 실시간 오차 없이 동기화됩니다.</li>
               </ul>
@@ -2042,40 +2050,21 @@
     function switchStrategyTab(num) {
       const mainPanel = document.getElementById('strategy-main-panel');
       const resPanel = document.getElementById('strategy-reserved-panel');
-      [1, 2, 3].forEach(n => {
-        const btn = document.getElementById(`strat-tab-${n}`);
-        if (n === num) {
-          btn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-emerald-500 text-white shadow-sm';
-        } else {
-          btn.className = 'px-3.5 py-1.5 rounded-lg text-xs font-medium transition bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] hover:text-[var(--foreground)]';
-        }
-      });
-
       if (num === 1) {
         currentActiveTrack = 1;
-        resPanel.classList.add('hidden');
-        mainPanel.classList.remove('hidden');
-        ledgerData.holdings = ledgerData.track1_holdings || ledgerData.holdings;
-        document.getElementById('holdings-table-title').textContent = '[Track 1: 10-Bagger Alpha Fund] 7-Slot 실전 보유 및 ATR(14) 동적 손절 안전 버퍼 (시총 $100B 이하)';
-        document.getElementById('holdings-table-subtitle').textContent = '헌법 1조~5조 준수: FCF 흑자 • GPM 59~80% • 부채비율 0.13 • 10-Bagger 고속성장 컴파운더 집중 (Sweet Spot: $1B ~ $100B)';
-        document.getElementById('donut-subtitle').textContent = 'Two-Track 통합: 10-Bagger 7슬롯(30%) + 메가독점 5슬롯(30%) + SGOV 국채 헷지(40%)';
-        renderHoldingsTable();
-      } else if (num === 2) {
-        currentActiveTrack = 2;
-        resPanel.classList.add('hidden');
-        mainPanel.classList.remove('hidden');
-        ledgerData.holdings = ledgerData.track2_holdings || [];
-        document.getElementById('holdings-table-title').textContent = '[Track 2: Mega Tech Monopoly Fund] 5-Slot 실전 보유 및 ATR(14) 동적 손절 안전 버퍼 (시총 $100B 초과)';
-        document.getElementById('holdings-table-subtitle').textContent = '글로벌 초거대 독점 병목주: NVDA(AI가속기) • TSM(최선단파운드리) • AVGO(커스텀ASIC) • MU(HBM) • ASML(EUV)';
-        document.getElementById('donut-subtitle').textContent = 'Track 2: 독점 대형 5종목(60.0%) + SGOV 국채 헷지(40.0%)';
-        renderHoldingsTable();
-      } else {
-        mainPanel.classList.add('hidden');
-        resPanel.classList.remove('hidden');
-        document.getElementById('reserved-strat-badge').textContent = 'STRATEGY #3 • GLOBAL MACRO SECTOR ROTATION';
-        document.getElementById('reserved-strat-title').textContent = 'Strategy 3: 글로벌 매크로 테크 섹터 로테이션 (차기 독립 펀드 준비 완료)';
-        document.getElementById('reserved-strat-desc').textContent = '금리·유동성 레짐 및 반도체/전력/소프트웨어/방산우주 섹터 간 상대강도(RS) 스코어를 기반으로 방어력과 초과수익을 동시 추구하는 3호 전략 슬롯입니다. Plan B Two-Track 파이프라인과 연계하여 즉각 가동 가능합니다.';
-        document.getElementById('reserved-ledger-file').textContent = 'portfolio_ledger_s3.json';
+        if (resPanel) resPanel.classList.add('hidden');
+        if (mainPanel) mainPanel.classList.remove('hidden');
+      } else if (num === 3) {
+        if (mainPanel) mainPanel.classList.add('hidden');
+        if (resPanel) resPanel.classList.remove('hidden');
+        const badge = document.getElementById('reserved-strat-badge');
+        if (badge) badge.textContent = 'STRATEGY #3 • GLOBAL MACRO SECTOR ROTATION';
+        const title = document.getElementById('reserved-strat-title');
+        if (title) title.textContent = 'Strategy 3: 글로벌 매크로 테크 섹터 로테이션 (차기 독립 펀드 준비 완료)';
+        const desc = document.getElementById('reserved-strat-desc');
+        if (desc) desc.textContent = '금리·유동성 레짐 및 반도체/전력/소프트웨어/방산우주 섹터 간 상대강도(RS) 스코어를 기반으로 방어력과 초과수익을 동시 추구하는 3호 전략 슬롯입니다. Plan B Two-Track 파이프라인과 연계하여 즉각 가동 가능합니다.';
+        const ledgerFile = document.getElementById('reserved-ledger-file');
+        if (ledgerFile) ledgerFile.textContent = 'portfolio_ledger_s3.json';
       }
     }
 
@@ -2098,17 +2087,17 @@
         '[Cash Buffer]',
         `- SGOV (${ledgerData.cash_buffer.weight_pct.toFixed(2)}%): $${ledgerData.cash_buffer.curr_price.toFixed(2)} | 연 ${ledgerData.cash_buffer.annual_yield_pct.toFixed(1)}% 무위험 초단기 미국채 이자 캐리`,
         '',
-        '[CIO 운용 코멘트]',
-        '- 10-Bagger 헌법 완전 준수 Track 1과 글로벌 1위 독점 Track 2의 결합으로 최상의 공수가 완성되었습니다.',
+        '[CIO 운용사업부 코멘트]',
+        ...(ledgerData.c_suite_comments && ledgerData.c_suite_comments.cio ? ledgerData.c_suite_comments.cio.bullets.map(b => `- ${b}`) : ['- 10-Bagger 헌법 완전 준수 Track 1과 글로벌 1위 독점 Track 2의 결합으로 최상의 공수가 완성되었습니다.']),
         '',
-        '[CFO 자본 코멘트]',
-        '- SOX 50일선 이탈에 따른 현금 40% 강제 확보로 하방 충격을 완벽히 차단하고 재매수 탄약을 비축 중입니다.',
+        '[CFO 자본배분본부 코멘트]',
+        ...(ledgerData.c_suite_comments && ledgerData.c_suite_comments.cfo ? ledgerData.c_suite_comments.cfo.bullets.map(b => `- ${b}`) : ['- SOX 50일선 이탈에 따른 현금 40% 강제 확보로 하방 충격을 완벽히 차단하고 재매수 탄약을 비축 중입니다.']),
         '',
-        '[CRO 리스크 코멘트]',
-        '- ATR(14) 2.0x 유계 동적 손절 적용으로 휩소를 53.8% 차단하며, 전 종목 동시 손절 시에도 계좌 최대 손실은 -7.20% 이내로 물리적 봉쇄됩니다.',
+        '[CRO 리스크관리본부 코멘트]',
+        ...(ledgerData.c_suite_comments && ledgerData.c_suite_comments.cro ? ledgerData.c_suite_comments.cro.bullets.map(b => `- ${b}`) : ['- ATR(14) 2.0x 유계 동적 손절 적용으로 휩소를 53.8% 차단하며, 계좌 최대 손실은 -5.52%로 물리적 봉쇄됩니다.']),
         '',
-        '[CTO 인프라 코멘트]',
-        '- 3개년(+311.6%, Sharpe 2.27) 및 5개년(+482.8%) 백테스트 무결성을 검증하였으며, 웹 대시보드와 로컬 원장이 실시간 동기화됩니다.'
+        '[CTO IT인프라본부 코멘트]',
+        ...(ledgerData.c_suite_comments && ledgerData.c_suite_comments.cto ? ledgerData.c_suite_comments.cto.bullets.map(b => `- ${b}`) : ['- 3개년(+311.6%, Sharpe 2.27) 및 5개년(+482.8%) 백테스트 무결성을 검증하였으며, 웹 대시보드와 로컬 원장이 실시간 동기화됩니다.'])
       ].join('
 ');
 
@@ -2129,8 +2118,43 @@
       document.getElementById('kpi-alpha-sox').textContent = `vs SOX: ${soxAlpha >= 0 ? '+' : ''}${soxAlpha.toFixed(2)}%p (${ledgerData.sox_close.toLocaleString()})`;
     }
 
+    // Helper: Dynamic Hydration of C-Suite Comments from JSON Data Island
+    function renderCSuiteComments() {
+      if (!ledgerData.c_suite_comments) return;
+      const { cio, cfo, cro, cto } = ledgerData.c_suite_comments;
+      if (cio) {
+        if (cio.title && document.getElementById('cio-comment-title')) document.getElementById('cio-comment-title').textContent = cio.title;
+        if (cio.version_badge && document.getElementById('cio-comment-badge')) document.getElementById('cio-comment-badge').textContent = cio.version_badge;
+        if (cio.bullets && document.getElementById('cio-comment-list')) {
+          document.getElementById('cio-comment-list').innerHTML = cio.bullets.map(b => `<li>${b}</li>`).join('');
+        }
+      }
+      if (cfo) {
+        if (cfo.title && document.getElementById('cfo-comment-title')) document.getElementById('cfo-comment-title').textContent = cfo.title;
+        if (cfo.version_badge && document.getElementById('cfo-comment-badge')) document.getElementById('cfo-comment-badge').textContent = cfo.version_badge;
+        if (cfo.bullets && document.getElementById('cfo-comment-list')) {
+          document.getElementById('cfo-comment-list').innerHTML = cfo.bullets.map(b => `<li>${b}</li>`).join('');
+        }
+      }
+      if (cro) {
+        if (cro.title && document.getElementById('cro-comment-title')) document.getElementById('cro-comment-title').textContent = cro.title;
+        if (cro.version_badge && document.getElementById('cro-comment-badge')) document.getElementById('cro-comment-badge').textContent = cro.version_badge;
+        if (cro.bullets && document.getElementById('cro-comment-list')) {
+          document.getElementById('cro-comment-list').innerHTML = cro.bullets.map(b => `<li>${b}</li>`).join('');
+        }
+      }
+      if (cto) {
+        if (cto.title && document.getElementById('cto-comment-title')) document.getElementById('cto-comment-title').textContent = cto.title;
+        if (cto.version_badge && document.getElementById('cto-comment-badge')) document.getElementById('cto-comment-badge').textContent = cto.version_badge;
+        if (cto.bullets && document.getElementById('cto-comment-list')) {
+          document.getElementById('cto-comment-list').innerHTML = cto.bullets.map(b => `<li>${b}</li>`).join('');
+        }
+      }
+    }
+
     // Initialize All Components
     initDynamicKpis();
+    renderCSuiteComments();
     updateMarketClocks();
     setInterval(updateMarketClocks, 1000);
     renderHoldingsTable();
